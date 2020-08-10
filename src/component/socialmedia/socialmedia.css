@@ -1,0 +1,13 @@
+.social {
+    list-style: none;
+    display: flex;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -50px;
+
+}
+.social li {
+    margin: 15px 15px;
+}

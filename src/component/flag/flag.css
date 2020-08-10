@@ -1,0 +1,16 @@
+.flag{
+    display: flex;
+    align-self: center;
+    position: relative;
+    justify-content: space-between;
+    bottom: 30px;
+    width: 95%;
+}
+
+#english {
+    padding-right: 10px;
+}
+#ptbr {
+    padding-left: 10px;
+
+}

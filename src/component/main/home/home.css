@@ -1,0 +1,24 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    /* color: white; */
+    position: relative;
+    align-self: center;
+    
+}
+.nome {
+    /* background-color: blue; */
+    border-bottom: solid 2px black;
+    margin-bottom: 5;
+}
+.sub {
+    margin-top: 0;
+    position: relative;
+    align-self: center;
+    /* background-color: brown; */
+    border-bottom: solid 2px black;
+}
+.red {
+    color: red;
+    font-weight: 900;
+}
