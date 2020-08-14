@@ -8,6 +8,7 @@ import Flag from './component/flag/flag'
 function App() {
   return (
     <Fragment>
+
       <Nav></Nav>
       <Main></Main>
       <Smedia></Smedia>

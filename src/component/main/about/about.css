@@ -1,0 +1,9 @@
+.about {
+    opacity: 0;
+    align-self: center;
+    align-content: center;
+    background-color: darkgreen;
+    font-size: larger;
+    width: 800px;
+    height: 200px;
+}

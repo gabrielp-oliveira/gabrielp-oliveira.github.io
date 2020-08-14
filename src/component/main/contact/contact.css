@@ -1,0 +1,27 @@
+.Contact {
+    opacity: 0;
+    align-self: center;
+    padding-bottom: 15px ;
+    padding-top: 0px ;
+}
+#resultado {
+    font-size: 12px;
+    margin: 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 40px;
+    font-weight: 900;
+}
+.title-cont > span {
+    font-size: 15px;
+    font-weight: 700;
+}
+.title-cont > i {
+    font-size: 20px;
+}
+p > a {
+    font-size: 17px;
+    font-weight: 700;
+}   

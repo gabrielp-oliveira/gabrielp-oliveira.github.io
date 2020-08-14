@@ -3,15 +3,133 @@ html, body {
     height: 100%;
     display: flex;
     justify-content: space-around;
-
 }
 
 #root {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
-    /* width: 100rem; */
-    /* background-color: rgb(143, 143, 184 ); */
     margin: 0;
 }
+
+#main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+
+
+@media (min-width: 280px) { 
+    #root{
+        width: 100vw;
+    }
+    .navigation div {
+        margin: 1px;
+        padding: 0px;
+        width: 50px;
+        height: 30px;
+        font-size: 12px;
+        font-weight: 900;
+    }
+    #main {
+        margin-top: 40px;
+        height: 25.5rem;
+    }
+    .nome {
+        font-size: 24px;
+    }
+    .sub {
+        font-size: 20px;
+    }
+    .social li {
+        font-size: 1.6rem;
+        margin: 5px 20px;
+    }
+}
+@media (min-width: 330px) { 
+    .navigation div {
+        width: 60px;
+    }
+}
+@media (min-width: 430px) { 
+    .navigation div {
+        margin: 8px;
+        font-size: 14px;
+        width: 65px;
+    }
+}
+
+@media (min-width: 576px) { 
+    #main {
+        margin-top: 50px;
+    }
+    .navigation div {
+        margin: 0px 9px;
+        padding: 5px;
+        width: 95px;
+        height: 40px;
+        font-size: 23px;
+    }
+ }
+
+@media (min-width: 768px) { 
+    .navigation div {
+        width: 110px;
+    }
+    #root{
+        width: 85vw;
+    }
+    #main {
+        height: 33rem;
+    }
+ }
+
+@media (min-width: 992px) { 
+    #main {
+        height: 35rem;
+    }
+    #root{
+        width: 75vw;
+    }
+ }
+
+@media (min-width: 1200px) { 
+    .navigation{
+        margin-bottom: 0px;
+    }
+    #root{
+        width: 68vw;
+    }#main {
+        margin-top: 75px;
+        /* height: 44rem; */
+    }
+ }
+
+ /* @media (max-height: 375px) { 
+    .social {
+        align-self: flex-start;
+        margin-left: 1px;
+        bottom: 0%;
+        background-color: darkgreen;
+    }
+    .social li {
+        font-size: 1.6rem;
+        margin: 5px 20px;
+
+    }
+} */
+
+ @media (max-height: 653px) { 
+    .social {
+        align-self: flex-end!important;
+        margin-left: 1px!important;
+        bottom: -1px!important;
+    }
+    .social li {
+        font-size: 1.6rem!important;
+        margin: 5px 20px!important;
+    }
+}
+

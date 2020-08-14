@@ -1,15 +1,14 @@
 import React from 'react'
-
 import '../resume/resume.css'
 
 
-function contact(){
+function resume(){
 
     return(
-        <div>
+        <div className="resume">
             resume...
         </div>
     )
 }
 
-export default contact
+export default resume
