@@ -3,7 +3,7 @@
     align-self: center;
     align-content: center;
     background-color: darkgreen;
-    font-size: larger;
-    width: 800px;
+    font-size: small;
+    /* width: 800px; */
     height: 200px;
 }

@@ -1,3 +1,4 @@
+
 html, body {
     margin: 0;
     height: 100%;
@@ -5,43 +6,83 @@ html, body {
     justify-content: space-around;
 }
 
+
 #root {
     display: flex;
     flex-direction: column;
+    align-self: center;
+    align-content: center;
+    justify-content: space-between;
     height: 100%;
     margin: 0;
+    border-left: 5px solid rgb(41, 41, 41);
+    border-right: 5px solid rgb(41, 41, 41);
+
 }
 
 #main {
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    position: relative;
+    width: 85%;
     justify-content: center;
+    align-items: flex-start ;
+    background-color: whitesmoke;
+    border-radius: 20px;
 
 }
 
 
 
-@media (min-width: 280px) { 
+@media (max-width: 279px) { 
+    .subnav {
+        display: none;
+    }
+    .nome{
+        font-size: 25px;
+    }
+    .sub{
+        font-size: 15px;
+    }
+    .social li {
+        font-size: 1.6rem;
+        margin: 5px 20px;
+    }
+    .social {
+        bottom: 5%;
+    }
+}
+
+@media (min-width: 279px) { 
     #root{
         width: 100vw;
+    }
+    footer{
+        width: calc(100vw - 5px);
+    }
+    .subnav {
+        border-right: calc(100vw - 5px) solid transparent;
+        top: 33px;
+    }
+    .prefooter {
+        border-left: calc(100vw - 5px) solid transparent;
     }
     .navigation div {
         margin: 1px;
         padding: 0px;
         width: 50px;
         height: 30px;
-        font-size: 12px;
+        font-size: 0.7rem;
         font-weight: 900;
     }
     #main {
-        margin-top: 40px;
         height: 25.5rem;
     }
     .nome {
-        font-size: 24px;
+        font-size: 22px;
     }
     .sub {
-        font-size: 20px;
+        font-size: 17px;
     }
     .social li {
         font-size: 1.6rem;
@@ -55,22 +96,32 @@ html, body {
 }
 @media (min-width: 430px) { 
     .navigation div {
-        margin: 8px;
-        font-size: 14px;
+        margin: 15px;
+        font-size: 1.1rem;
         width: 65px;
+        width: 80px;
+
     }
+    .subnav {
+        top: 43px;
+    }    
+    #main {
+        height: 30rem;
+    }
+    
 }
 
 @media (min-width: 576px) { 
-    #main {
-        margin-top: 50px;
-    }
+
     .navigation div {
         margin: 0px 9px;
         padding: 5px;
         width: 95px;
         height: 40px;
         font-size: 23px;
+    }
+    .subnav {
+        top: 51px;
     }
  }
 
@@ -79,19 +130,37 @@ html, body {
         width: 110px;
     }
     #root{
-        width: 85vw;
+        width: 100vw;
+    }
+    footer{
+        width: calc(100vw - 5px) ;
+    }
+    .subnav {
+        border-right: calc(100vw - 5px)  solid transparent;
+    }
+    .prefooter {
+        border-left: calc(100vw - 5px)  solid transparent;
     }
     #main {
-        height: 33rem;
+        height: 35rem;
     }
  }
 
 @media (min-width: 992px) { 
     #main {
-        height: 35rem;
+        height: 38rem;
     }
     #root{
-        width: 75vw;
+        width: 100vw;
+    }
+    footer{
+        width: calc(100vw - 5px);
+    }
+    .subnav {
+        border-right:  calc(100vw - 5px) solid transparent;
+    }
+    .prefooter {
+        border-left: calc(100vw - 5px) solid transparent;
     }
  }
 
@@ -99,37 +168,41 @@ html, body {
     .navigation{
         margin-bottom: 0px;
     }
-    #root{
-        width: 68vw;
-    }#main {
-        margin-top: 75px;
-        /* height: 44rem; */
+
+    /* #root{
+        width: 100vw;
+    }
+    footer{
+        width: calc(100vw - 5px);
+    }
+    .subnav {
+        border-right: calc(100vw - 5px) solid transparent;
+    }
+    .prefooter {
+        border-left: calc(100vw - 5px) solid transparent;
+    } */
+
+ }
+ @media (max-height: 590px) { 
+        .footer {
+        /* display: none; */
     }
  }
 
- /* @media (max-height: 375px) { 
-    .social {
-        align-self: flex-start;
-        margin-left: 1px;
-        bottom: 0%;
-        background-color: darkgreen;
-    }
-    .social li {
-        font-size: 1.6rem;
-        margin: 5px 20px;
-
-    }
-} */
-
- @media (max-height: 653px) { 
+ @media (max-height: 630px) { 
     .social {
         align-self: flex-end!important;
         margin-left: 1px!important;
-        bottom: -1px!important;
+        bottom: 2%!important;
     }
     .social li {
         font-size: 1.6rem!important;
         margin: 5px 20px!important;
     }
+    .prefooter {
+        display: none;
+    }
+    .footer {
+        /* text-align: left; */
+    }
 }
-

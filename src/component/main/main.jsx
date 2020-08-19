@@ -38,10 +38,10 @@ function Main() {
             if (document.querySelector('body').clientHeight >= 640) {
                 if (after.type.name !== 'home') {
 
-                    document.querySelector('.social').style.bottom = '3%'
+                    document.querySelector('.social').style.bottom = '0%'
                     document.querySelector('.social').style.transition = 'all 1500ms'
                 }else {
-                    document.querySelector('.social').style.bottom = '25%'
+                    document.querySelector('.social').style.bottom = '200px'
                     document.querySelector('.social').style.transition = 'all 1500ms'
                 }
             }

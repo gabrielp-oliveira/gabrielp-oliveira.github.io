@@ -3,19 +3,39 @@
     list-style: none;
     display: flex;
     justify-content: center;
-    box-sizing: content-box;
     position: relative;
     top: 0px;
-    padding: 10px;
-    margin: 15px;
+    padding-bottom: 8px;
+    /* border-right: 2px solid rgb(41, 41, 41); */
+    margin: 0px;
     align-self: center;
+    background-color: rgb(41, 41, 41);
+    width: 100vw ;
+    /* right: 0px; */
+
 }
 
 .navigation div {
     cursor: pointer;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(41, 41, 41);
+    color: aliceblue;
+    height: 100%;
+    padding: 2px;
+    margin: 2px;
+    font-weight: 700;
+}
+.subnav {
+    margin-top: 0;
+    border-top: 339px solid rgb(41, 41, 41);
+    position: absolute;
+    left: 4px;
 }
 
 .navigation div:hover {
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(22, 22, 22);
+    border-bottom: 2px solid rgb(187, 187, 187);
+}
+
+.bout, .home, .projects, .resume, .contact {
+    z-index: 2;
 }

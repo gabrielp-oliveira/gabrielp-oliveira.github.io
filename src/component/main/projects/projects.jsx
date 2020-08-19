@@ -6,50 +6,25 @@ import dino from '../imgs/img1.png'
 function projects() {
 
     return (
-        <div className="projects d-flex flex-md-column flex-lg-row">
+        <div className="projects">
+        <div className="justify-content-start container">
 
-            <div className="primeiro card" >
-                <img src={dino} className="card-img-top" alt="..."></img>
-                <div className="card-body">
-                    <h5 className="card-title">Primeiro</h5>
-                    <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aperiam inventore nemo vero excepturi nisi officiis fugit</p>
-                    <div className="d-flex justify-content-between">
-                        <a href="#" className="btn btn-primary">Demo</a>
-                        <a href="#" className="btn btn-primary">Code</a>
-
-                    </div>
+            <div className="row d-flex justify-content-center">
+                <div id="primeiro"className="col-10 col-md-6 col-lg-12 col-xl-10">
+                    <img src={dino} className="img-fluid mb-4" wm-city="New York"></img>
                 </div>
-            </div>
-
-            <div className="segundo card" >
-                <img src={dino} className="card-img-top" alt="..."></img>
-                <div className="card-body">
-                    <h5 className="card-title">Segundo</h5>
-                    <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aperiam inventore nemo vero excepturi nisi officiis fugit</p>
-                    <div className="d-flex justify-content-between">
-                        <a href="#" className="btn btn-primary">Demo</a>
-                        <a href="#" className="btn btn-primary">Code</a>
-
-                    </div>
+                <div id="segundo"className="col-10 col-md-6 col-lg-5 col-xl-5">
+                    <img src={dino} className="img-fluid mb-4" wm-city="New York"></img>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, corporis magni fugit labore necessitatibus est eaque, et consectetur rem dignissimos vel</p>
                 </div>
-            </div>
-
-            <div className="terceiro card" >
-                <img src={dino} className="card-img-top" alt="..."></img>
-                <div className="card-body">
-                    <h5 className="card-title">Terceiro <i className="fa fa-github" aria-hidden="true"></i> <i className="fa fa-github" aria-hidden="true"></i> <i className="fa fa-github" aria-hidden="true"></i> <i className="fa fa-github" aria-hidden="true"></i></h5>
-                    <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aperiam inventore nemo vero excepturi nisi officiis fugit</p>
-                    <div className="d-flex justify-content-between">
-                        <a href="#" className="btn btn-primary">Demo</a>
-                        <a href="#" className="btn btn-primary">Code</a>
-
-                    </div>
+                <div id="terceiro" className="col-10 col-md-6 col-lg-5 col-xl-5">
+                    <img src={dino} className="img-fluid mb-4" wm-city="New York"></img>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, corporis magni fugit labore necessitatibus est eaque, et consectetur rem dignissimos vel</p>
                 </div>
+               
             </div>
-
-
-
-
+        </div>
+        <div> Mais projetos disponiveis em Github e Codepen :)</div>
         </div>
     )
 }
