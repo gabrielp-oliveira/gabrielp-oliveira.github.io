@@ -1,9 +1,49 @@
 .about {
     opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about p {
+    text-align: center;
+}
+
+#front, #back {
+    display: flex;
+    flex-direction: column;
+}
+
+#skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-self: center;
-    align-content: center;
-    background-color: darkgreen;
-    font-size: small;
-    /* width: 800px; */
-    height: 200px;
+    justify-content: space-around;
+}
+.conhecimentos {
+    display: flex;
+    justify-content: center;
+}
+.conhecimentos span, #front div, #back div{
+    display: flex;
+    justify-content: center;
+}
+
+#skills span {
+    margin: 15px;
+    font-weight: 700;
+}
+#skills-titulo {
+    border-top: 5px solid rgb(0, 0, 0, 0.5);
+    margin: 0px 0px 15px 0px ;
+    padding: 15px 36px 0px 36px;
+
+    align-self: center;
+}
+
+#front div i, #back div i {
+    font-size: 3rem;
+    display: flex;
+    align-self: center;
 }

@@ -5,13 +5,15 @@
     justify-content: center;
     position: relative;
     top: 0px;
-    padding-bottom: 8px;
     /* border-right: 2px solid rgb(41, 41, 41); */
     margin: 0px;
     align-self: center;
-    background-color: rgb(41, 41, 41);
     width: 100vw ;
     /* right: 0px; */
+}
+.nav_{
+    padding: 5px 0px;
+    background: rgba(255, 255, 255, 0.05);
 
 }
 
@@ -24,18 +26,21 @@
     margin: 2px;
     font-weight: 700;
 }
-.subnav {
-    margin-top: 0;
-    border-top: 339px solid rgb(41, 41, 41);
-    position: absolute;
-    left: 4px;
+
+
+.navigation li:hover {
+    background-color: rgb(255, 255, 255, 0.15);
+    transition: 200ms;
+
 }
 
-.navigation div:hover {
-    background-color: rgb(22, 22, 22);
-    border-bottom: 2px solid rgb(187, 187, 187);
-}
+.navigation li {
+    transition: 200ms;
 
-.bout, .home, .projects, .resume, .contact {
-    z-index: 2;
+    margin: 0px 3px;
+    padding: 15px 15px;
+    color: white;
+    cursor: pointer;
+    /* background-color: tomato; */
+    height: 100%;
 }

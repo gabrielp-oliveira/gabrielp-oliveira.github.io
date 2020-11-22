@@ -1,19 +1,45 @@
 .projects {
-    overflow: auto;
     width: 100%;
     /* border: 2px solid black; */
-    height: 100%;
-    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
 
-#primeiro, #segundo, #terceiro {
-    /* height: 800px; */
+.projeto{
+    position: relative;
+    max-width: 500px;
+    min-width: 280px;
+    background-color: rgb(255, 255, 255, 0.05);
+    box-shadow: 5px 5px 10px rgb(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px;
     margin: 10px;
-    /* border: 1px solid rgb(156, 156, 156); */
-    padding: 0px;
+    color: rgb(255, 255, 255);
+    
 }
 img {
+    border-radius: 10px;
     width: 100%;
+    height: 300px;
+    opacity: 0.5;
+}
+.desc{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    padding: 15px;
+}
+.desc p {
+    text-align: justify;
+
+}
+
+.buttons{
+    margin: 15px 0px 0px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }

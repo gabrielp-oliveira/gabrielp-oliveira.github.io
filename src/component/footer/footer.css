@@ -1,18 +1,43 @@
-footer, .prefooter {
-    /* position: absolute; */
-}
 footer {
-    bottom: 0px;
-    height: 50px;
-    background-color: rgb(41, 41, 41);
-    color: whitesmoke;
-    text-align: center;
-    left: 4px;
-}
-.prefooter  {
-    bottom: 49px;
-    border-bottom: 160px solid rgb(41, 41, 41);
-	height: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+  footer div {
+    align-self: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 12rem;
+    /* margin: 0px; */
+    /* padding: 0px; */
+    
+  }
+  
+  
+  footer div span {
+    /* margin: 0px 10px; */
+    font-size: 1.6rem;
+    transition: 400ms;
+    justify-content: space-around;
+    /* bottom: 15px; */
+    
+  }
+  
+  footer div span a {
+    text-decoration: none;
+    position: relative;
+    transition: 400ms;
+    /* margin-bottom: 15px; */
+    border-radius: 100%;
+    padding: 5px;
+    color: white;
 
-
-}
+  }
+  
+  .fa-github:hover, .fa-linkedin-square:hover, .fa-codepen:hover{
+    cursor: pointer;
+    text-decoration: none;
+  }

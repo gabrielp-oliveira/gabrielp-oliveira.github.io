@@ -6,11 +6,11 @@ import Contact from './contact/contact'
 import Projects from './projects/projects'
 
 function Main() {
-    const [content, setContent] = useState(<Home></Home>);
+    const [content, setContent] = useState(<Projects></Projects>);
 
     useEffect(() => {
 
-        let navigation = document.querySelectorAll('.navigation div')
+        let navigation = document.querySelectorAll('.navigation li')
         navigation.forEach((element) => {
             element.onclick = function (e) {
                 if (e.target.innerHTML === 'About') {
@@ -35,18 +35,8 @@ function Main() {
 
     function transition(before, after) {
         if (before.type.name !== after.type.name) {
-            if (document.querySelector('body').clientHeight >= 640) {
-                if (after.type.name !== 'home') {
-
-                    document.querySelector('.social').style.bottom = '0%'
-                    document.querySelector('.social').style.transition = 'all 1500ms'
-                }else {
-                    document.querySelector('.social').style.bottom = '200px'
-                    document.querySelector('.social').style.transition = 'all 1500ms'
-                }
-            }
             document.querySelector(`.${content.type.name}`).style.opacity = '0'
-            document.querySelector(`.${content.type.name}`).style.transition = 'all 100ms'
+            document.querySelector(`.${content.type.name}`).style.transition = 'all 150ms'
 
             setTimeout(() => {
 
@@ -55,12 +45,28 @@ function Main() {
                 console.log(after.type.name)
                 setTimeout(() => {
                     document.querySelector(`.${after.type.name}`).style.opacity = '1'
-                    document.querySelector(`.${after.type.name}`).style.transition = 'all 100ms'
+                    document.querySelector(`.${after.type.name}`).style.transition = 'all 150ms'
 
-                }, 100)
-            }, 100)
+                }, 150)
+            }, 150)
         }
     }
+
+    // document.querySelector('body').onload = function () {
+    //     let timer = 56
+    //     setInterval(() => {
+    //         timer = timer + 1
+    //         document.querySelector('body').style.background = `linear-gradient(${timer}deg, rgb(0, 15, 25) 0%, rgba(0,0,0,1) 50%, rgb(22, 3, 0) 100%)`
+    //         if (timer >= 359) {
+    //             timer = 0
+    //         }
+
+    //         document.querySelector('body').style.backgroundRepeat = 'no-repeat'
+    //         document.querySelector('body').style.backgroundSize = 'cover'
+    //         document.querySelector('body').style.backgroundPosition = 'center'
+    //         document.querySelector('body').style.backgroundAttachment = 'fixed'
+    //     }, 100);
+    // }
 
     return (
         <main id="main" className="container-fluid">

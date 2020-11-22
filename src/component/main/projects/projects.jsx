@@ -1,30 +1,43 @@
 import React from 'react'
 import '../projects/projects.css'
-import dino from '../imgs/img1.png'
+import memory_img from '../imgs/img-2.png'
+import chat_img from '../imgs/chat-img.png'
 
 
 function projects() {
 
     return (
         <div className="projects">
-        <div className="justify-content-start container">
+            <div className="d-flex flex-wrap justify-content-center">
+                <div className="projeto">
+                    <img src={memory_img} alt="" />
+                    <div className="desc">
+                        <h3>Projeto 1</h3>
+                        <h5>isso isso e aquilo outro</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo impedit aperiam maxime maiores iure, magnam reiciendis recusandae voluptatibus quia rerum facilis deserunt animi minus a, ex quas, assumenda debitis dignissimos.</p>
 
-            <div className="row d-flex justify-content-center">
-                <div id="primeiro"className="col-10 col-md-6 col-lg-12 col-xl-10">
-                    <img src={dino} className="img-fluid mb-4" wm-city="New York"></img>
+                    </div>
+                    <div className="buttons">
+                        <a className="btn btn-primary fa fa-github" target="_blank" href="https://github.com/Biel-97/Memory-game-React"></a>
+                        <a className="btn btn-primary" target="_blank" href="https://biel-97.github.io/Memory-game-React/">Projeto</a>
+                    </div>
                 </div>
-                <div id="segundo"className="col-10 col-md-6 col-lg-5 col-xl-5">
-                    <img src={dino} className="img-fluid mb-4" wm-city="New York"></img>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, corporis magni fugit labore necessitatibus est eaque, et consectetur rem dignissimos vel</p>
+                <div className="projeto">
+                    <img src={chat_img} alt="" />
+                    <div className="desc">
+
+                        <h3>Projeto 2</h3>
+                        <h5>isso isso e aquilo outro</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo impedit aperiam maxime maiores iure, magnam reiciendis recusandae voluptatibus quia rerum facilis deserunt animi minus a, ex quas, assumenda debitis dignissimos.</p>
+                    </div>
+                    <div className="buttons">
+                        <a className="btn btn-primary fa fa-github" target="_blank" href="https://github.com/Biel-97/Chat-App"></a>
+                        <a className="btn btn-primary" target="_blank" href="https://biel-97.github.io/Chat-App/#/">Projeto</a>
+                    </div>
                 </div>
-                <div id="terceiro" className="col-10 col-md-6 col-lg-5 col-xl-5">
-                    <img src={dino} className="img-fluid mb-4" wm-city="New York"></img>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, corporis magni fugit labore necessitatibus est eaque, et consectetur rem dignissimos vel</p>
-                </div>
-               
+
             </div>
-        </div>
-        <div> Mais projetos disponiveis em Github e Codepen :)</div>
+            <span className="align-self-center mt-2"> Mais projetos disponiveis em Github e Codepen</span>
         </div>
     )
 }
