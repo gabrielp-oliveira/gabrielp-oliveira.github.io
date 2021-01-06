@@ -4,9 +4,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .about p {
     text-align: center;
+    text-shadow: none;
+    font-family: sans-serif;
+    letter-spacing: 1;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 25px;
 }
 
 #front, #back {

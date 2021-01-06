@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Home from './home/home'
 import About from './about/about'
-import Resume from './resume/resume'
 import Contact from './contact/contact'
 import Projects from './projects/projects'
 
 function Main() {
-    const [content, setContent] = useState(<Projects></Projects>);
+    const [content, setContent] = useState(<Home></Home>);
 
     useEffect(() => {
 
@@ -18,10 +17,7 @@ function Main() {
                 } else if (e.target.innerHTML === 'Projects') {
                     transition(content, <Projects></Projects>)
 
-                } else if (e.target.innerHTML === 'Resume') {
-                    transition(content, <Resume></Resume>)
-
-                } else if (e.target.innerHTML === 'Contact') {
+                }else if (e.target.innerHTML === 'Contact') {
                     transition(content, <Contact></Contact>)
 
                 } else if (e.target.innerHTML === 'Home') {
@@ -36,7 +32,7 @@ function Main() {
     function transition(before, after) {
         if (before.type.name !== after.type.name) {
             document.querySelector(`.${content.type.name}`).style.opacity = '0'
-            document.querySelector(`.${content.type.name}`).style.transition = 'all 150ms'
+            document.querySelector(`.${content.type.name}`).style.transition = 'all 100ms'
 
             setTimeout(() => {
 
@@ -45,28 +41,28 @@ function Main() {
                 console.log(after.type.name)
                 setTimeout(() => {
                     document.querySelector(`.${after.type.name}`).style.opacity = '1'
-                    document.querySelector(`.${after.type.name}`).style.transition = 'all 150ms'
+                    document.querySelector(`.${after.type.name}`).style.transition = 'all 100ms'
 
-                }, 150)
-            }, 150)
+                }, 100)
+            }, 100)
         }
     }
 
-    // document.querySelector('body').onload = function () {
-    //     let timer = 56
-    //     setInterval(() => {
-    //         timer = timer + 1
-    //         document.querySelector('body').style.background = `linear-gradient(${timer}deg, rgb(0, 15, 25) 0%, rgba(0,0,0,1) 50%, rgb(22, 3, 0) 100%)`
-    //         if (timer >= 359) {
-    //             timer = 0
-    //         }
+    document.querySelector('body').onload = function () {
+        let timer = 56
+        setInterval(() => {
+            timer = timer + 1
+            document.querySelector('body').style.background = `linear-gradient(${timer}deg, rgb(0, 15, 25) 0%, rgba(0,0,0,1) 50%, rgb(22, 3, 0) 100%)`
+            if (timer >= 359) {
+                timer = 0
+            }
 
-    //         document.querySelector('body').style.backgroundRepeat = 'no-repeat'
-    //         document.querySelector('body').style.backgroundSize = 'cover'
-    //         document.querySelector('body').style.backgroundPosition = 'center'
-    //         document.querySelector('body').style.backgroundAttachment = 'fixed'
-    //     }, 100);
-    // }
+            document.querySelector('body').style.backgroundRepeat = 'no-repeat'
+            document.querySelector('body').style.backgroundSize = 'cover'
+            document.querySelector('body').style.backgroundPosition = 'center'
+            document.querySelector('body').style.backgroundAttachment = 'fixed'
+        }, 130);
+    }
 
     return (
         <main id="main" className="container-fluid">

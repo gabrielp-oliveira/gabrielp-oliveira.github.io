@@ -37,14 +37,14 @@ function Contact() {
                     <div className="input">
                         <input type="text" required
                             name="name"></input>
-                        <label for="name">nome</label>
+                        <label htmlFor="name">nome</label>
                         <span className="error"></span>
                     </div>
 
                     <div className="input">
                         <input type="Email" required
                             name="Email"></input>
-                        <label for="email">Email</label>
+                        <label htmlFor="email">Email</label>
                         <span className="error"></span>
 
                     </div>

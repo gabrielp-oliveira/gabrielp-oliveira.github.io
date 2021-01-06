@@ -10,6 +10,7 @@
     align-self: center;
     width: 100vw ;
     /* right: 0px; */
+    font-family: sans-serif;
 }
 .nav_{
     padding: 5px 0px;
@@ -17,30 +18,19 @@
 
 }
 
-.navigation div {
-    cursor: pointer;
-    border-bottom: 2px solid rgb(41, 41, 41);
-    color: aliceblue;
-    height: 100%;
-    padding: 2px;
-    margin: 2px;
-    font-weight: 700;
-}
 
-
-.navigation li:hover {
+.navigation li:hover, .navigation a:hover{
     background-color: rgb(255, 255, 255, 0.15);
     transition: 200ms;
-
+    color: white;
 }
 
-.navigation li {
+.navigation li, .navigation a {
     transition: 200ms;
-
     margin: 0px 3px;
     padding: 15px 15px;
     color: white;
-    cursor: pointer;
-    /* background-color: tomato; */
     height: 100%;
+    cursor: pointer;
+    font-weight: 700;
 }

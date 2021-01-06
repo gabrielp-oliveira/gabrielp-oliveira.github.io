@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    font-family: inter,sans-serif;
+
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+p {
+    font-size: large;
+    font-weight: 500;
+    width: 430px;
+}
+h4 {
+    margin: 0px;
+}
+.email {
+    margin-left: 10px;
+}
+.email a {
+    /* color: black; */
+}
+#content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#info, #header-name, #nome, #front, #back {
+    display: flex;
+    flex-direction: column;
+}
+#info {
+    background-color: rgb(250, 250, 250);
+    width: 250px;
+    height: 100%;
+}
+
+#header-name {
+    margin: 0px 0px 20px 0px;
+    align-self: center;
+    z-index: 2;
+}
+#teste {
+    transform: rotate(40deg);
+    /* background-color: rgb(0, 0, 0, 0.5); */
+    box-shadow: 0px 0px 100px rgb(0, 0, 0, 0.5) inset;
+    border-radius: 50px;
+    width: 280px;
+    height: 280px;
+}
+
+#nome {
+    transform: rotate(-40deg);
+    margin-top: 45px;
+    margin-left: 20px;
+    /* color: white; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+}
+#nome h1{
+    margin-bottom: 15px;
+}
+#nome span {
+    margin-bottom: 30px;
+}
+
+#header-name h1 {
+    margin: 0;
+    align-self: center;
+}
+#header-name div span {
+    align-self: center;
+
+}
+
+#contato {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 20px;
+    z-index: 2;
+}
+#contato span {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+#nome span {
+    font-size: 18px;
+}
+
+
+#skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-around;
+}
+.conhecimentos {
+    display: flex;
+}
+
+#skills span {
+    margin: 15px;
+    border-bottom: 5px solid rgb(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+#skills-titulo {
+    border-top: 5px solid rgb(0, 0, 0, 0.5);
+    margin: 0px 0px 15px 0px ;
+    padding: 15px 36px 0px 36px;
+
+    align-self: center;
+}
+
+main {
+    width: 500px;
+    z-index: 3;
+    background-color: white;
+}
+
+#proj {
+    margin-left: 15px;
+}
+#proj div {
+    margin-left: 15px;
+}
+#proj p {
+    width: 420px;
+}
+
+#ola p, #formacao p  {
+    margin-left: 15px;
+}
+
+#conteudo {
+    margin: 30px 0px 0px 15px;
+}
+#ola:after {
+    content: '';
+    display: block;
+    width: 450px;
+    height: 3px;
+    background: rgb(0, 0, 0, 0.5);
+    /* position: absolute; */
+    right: 95px;
+    /* top: 20%; */
+}
+#projetos:after {
+    content: '';
+    display: block;
+    width: 450px;
+    height: 3px;
+    background: rgb(0, 0, 0, 0.5);
+    /* position: absolute; */
+    right: 95px;
+    /* top: 20%; */
+    
+}
+.linha:after {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 680px;
+    background: rgb(0, 0, 0, 0.5);
+    margin-top: 30px;
+    z-index: 5;
+}
+a{
+    text-decoration: none;    
+}
+
+a:hover {
+    text-decoration: underline;    
+
+}
+
+.cont {
+    float: left;
+}
+
+.salario:before {
+    content: '';
+    display: block;
+    width: 450px;
+    height: 3px;
+    background: rgb(0, 0, 0, 0.5);
+    /* position: absolute; */
+    right: 95px;
+    /* top: 20%; */
+}

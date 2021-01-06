@@ -6,11 +6,11 @@ function about() {
     return (
         <div className="about sign">
             <div id="skills">
-                <div class="conhecimentos">
+                <div className="conhecimentos">
 
                     <div id="front">
                         <div>
-                            <i class="fa fa-laptop flicker" aria-hidden="true"></i>
+                            <i className="fa fa-laptop flicker" aria-hidden="true"></i>
                         </div>
 
                         <span>HTML 5 </span>
@@ -22,7 +22,7 @@ function about() {
 
                     <div id="back">
                         <div>
-                            <i class="fa fa-database flicker" aria-hidden="true"></i>
+                            <i className="fa fa-database flicker" aria-hidden="true"></i>
                         </div>
 
                         <span>Node JS</span>

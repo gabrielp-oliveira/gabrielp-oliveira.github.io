@@ -18,8 +18,8 @@ function projects() {
 
                     </div>
                     <div className="buttons">
-                        <a className="btn btn-primary fa fa-github" target="_blank" href="https://github.com/Biel-97/Memory-game-React"></a>
-                        <a className="btn btn-primary" target="_blank" href="https://biel-97.github.io/Memory-game-React/">Projeto</a>
+                        <a className="btn btn-primary fa fa-github" rel="noreferrer" target="_blank" href="https://github.com/Biel-97/Memory-game-React"></a>
+                        <a className="btn btn-primary" rel="noreferrer" target="_blank" href="https://biel-97.github.io/Memory-game-React/">Projeto</a>
                     </div>
                 </div>
                 <div className="projeto">
@@ -31,8 +31,8 @@ function projects() {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo impedit aperiam maxime maiores iure, magnam reiciendis recusandae voluptatibus quia rerum facilis deserunt animi minus a, ex quas, assumenda debitis dignissimos.</p>
                     </div>
                     <div className="buttons">
-                        <a className="btn btn-primary fa fa-github" target="_blank" href="https://github.com/Biel-97/Chat-App"></a>
-                        <a className="btn btn-primary" target="_blank" href="https://biel-97.github.io/Chat-App/#/">Projeto</a>
+                        <a className="btn btn-primary fa fa-github" rel="noreferrer" target="_blank" href="https://github.com/Biel-97/Chat-App"></a>
+                        <a className="btn btn-primary" rel="noreferrer" target="_blank" href="https://biel-97.github.io/Chat-App/#/">Projeto</a>
                     </div>
                 </div>
 
