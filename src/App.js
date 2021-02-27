@@ -1,18 +1,19 @@
-import React, { Fragment } from 'react';
+import Home from './components/home/Home'
 import './App.css';
-import Nav from './component/navbar/navbar'
-import Main from './component/main/main'
-import Footer from './component/footer/footer'
-
+import About from './components/about/about'
+import Portfolio from './components/portfolio/portfolio'
+import Contact from './components/contact/contact'
 function App() {
   return (
-    <Fragment>
+    <div className="App">
+      <Home></Home>
+      <main>
 
-      <Nav></Nav>
-      <Main></Main>
-      <Footer></Footer>
-
-    </Fragment>
+      <About></About>
+      <Portfolio></Portfolio>
+      <Contact/>
+      </main>
+    </div>
   );
 }
 

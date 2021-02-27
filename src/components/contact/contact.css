@@ -1,0 +1,117 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background: var(--Dark);
+    color: white;
+}
+
+.form{
+    width: 500px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+}
+.form > p {
+    margin: 10px;
+}
+.form > p >  a{
+    color: white;
+    font-size: 18px;
+}
+
+.form > span {
+    color: white;
+}
+
+.form-top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.form-top > div {
+    width: 49%;
+    margin-bottom: 5px;
+}
+
+.subject{
+    width: 100%;
+    margin-bottom: 5px;
+
+}
+.form-top > div> input, .subject > input {
+    width: 100%;
+    height: 35px;
+    color: white;
+    background: rgb(0, 0, 0, 0.6);
+    border-end-end-radius: 5px;
+    padding: 5px;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 16px ;
+    border: none;
+    /* border-right: 1px solid rgb(0, 0, 0, 0.9);
+    border-bottom: 1px solid rgb(0, 0, 0, 0.9);
+    border-top: 1px solid rgb(0, 0, 0, 0.9); */
+}
+.form-top > div> input:focus, .subject > input:focus {
+    background: rgb(0, 0, 0, 0.3);
+}
+.form-top > div> label, .subject > label {
+    color: white;
+    align-self: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+    padding: 0px 3px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+ 
+}
+.message {
+    width: 100%;
+}
+.message > textarea{
+    width: 100%;
+    height: 150px;
+    background: rgb(0, 0, 0, 0.6);
+    padding: 10px;
+    /* border: 1px solid rgb(0, 0, 0, 0.9); */
+    border: none;
+    outline: none;
+    resize: none;
+    color: white;
+    font-size: 17px ;
+}
+.message > textarea:focus{
+    background: rgb(0, 0, 0, 0.3);
+
+}
+.input-conteiner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+.form > button {
+    width: 100%;
+    height: 50px;
+    font-size: larger;
+    background: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.form > button:hover {
+    background: rgba(0, 195, 255, 0.8);
+
+}

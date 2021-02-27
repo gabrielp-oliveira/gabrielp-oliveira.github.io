@@ -1,58 +1,39 @@
+:root {
+  --Light: rgb(133, 96, 2);
+  --Dark: rgb(5, 0, 32);
+}
 
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
 }
-html, body, #root {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+html, body, #root, .app {
+  height: 100%;
 }
 
-
-#root {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    align-content: center;
-    justify-content: space-between;
-}
-body{
-    background: linear-gradient(56deg, rgb(0, 15, 25) 0%, rgba(0,0,0,1) 50%, rgb(22, 3, 0) 100%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center ;
-    background-attachment: fixed;
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#main {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    padding: 0%;
-
+main {
+  width: 100%;
+  margin: 0 auto
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+/* Medium 500  navigation texts*/
 
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@600&display=swap');
+/* font-family: 'Spartan', sans-serif; */
+/* Semi-bold 600 header*/
 
-@media (max-width: 576px) { 
-    .nome{
-        font-size: 2rem;
-    }
-    .home h3{
-        font-size: 1.3rem;
-
-    }
- }
-
-@media (min-width: 768px) { 
-
- }
-
-@media (min-width: 992px) { 
-     }
-
-@media (min-width: 1200px) { 
-
- }
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+/* font-family: 'Roboto Slab', serif; */
+/* Light 300 light texts*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+/* font-family: 'Work Sans', sans-serif;  */
+/* Medium 500 header / text */
