@@ -1,4 +1,4 @@
-import img from '../../assets/imgs/image-1.jpg'
+import img from '../../assets/imgs/Chat.webp'
 export default  {
     eng:{
         description: 'This app is hosted on heroku free plan, meaning that on the initial load, the server mat neet to start which can cause a delay.',
@@ -18,7 +18,7 @@ export default  {
 
     },
     info:{
-        title:'Proj Title',
+        title:'Chat-App',
         img: img,
         urls: {
             visit: '#',

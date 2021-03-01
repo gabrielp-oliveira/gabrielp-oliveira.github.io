@@ -27,7 +27,7 @@ function Header() {
                 <div className="intro">
                     <h1>Lorem ipsum dolor</h1>
 
-                    <h3>{home[Language]}</h3>
+                    <h2>{home[Language]}</h2>
                     <div className="social">
                         <span><FontAwesomeIcon icon={faGithub} /></span>
                         <span><FontAwesomeIcon icon={faCodepen} /></span>

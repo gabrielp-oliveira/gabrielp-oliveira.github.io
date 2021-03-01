@@ -51,9 +51,9 @@
 }
 
 
-.about-conteiner > h4 {
+.about-conteiner > h3 {
     font-family: 'Spartan', sans-serif;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 160, 133);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,7 +61,7 @@
     width: 100%;
 }
 
-.about-conteiner > h4::after{
+.about-conteiner > h3::after{
     content: '';
     display: block;
     width: 20%;
@@ -69,7 +69,7 @@
 background: linear-gradient(90deg, rgba(114, 115, 160, 0.3) 0%, transparent 100%);
     margin: 0px 20px;
 }
-.about-conteiner > h4::before{
+.about-conteiner > h3::before{
     content: '';
     display: block;
     width: 20%;

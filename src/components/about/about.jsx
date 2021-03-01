@@ -44,7 +44,7 @@ function About() {
         <>
             <div className="about-conteiner">
                 {/* <h4>{about[Language].about_text}</h4> */}
-                <h4>About</h4>
+                <h3>About</h3>
                 <div className="about">
 
 

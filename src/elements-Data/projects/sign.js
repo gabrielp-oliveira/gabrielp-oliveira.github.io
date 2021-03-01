@@ -1,5 +1,4 @@
-import img from '../../assets/imgs/spotifyClone.webp'
-// import React from 'react'
+import img from '../../assets/imgs/sign.webp'
 
 export default  {
     eng:{
@@ -23,7 +22,7 @@ export default  {
     },
     pt:{
         description: <p>Este aplicativo está hospedado no plano gratuito do {<span className="target">heroku</span>}, o que significa que na primeira iniciação, o servidor pode causar um {<span className="target">atraso</span>}.</p>,
-        function: <p>possuindo as {<span className="target">funcionalidades de autenticação</span>} de usuario, é possivel obter as playlists do {<span className="target">usuario</span>}, com suas musicas, autores e albums.</p>,
+        function: <p>possuindo as duncionalidades de {<span className="target">Login e Registro</span>} é possivel obter os {<span className="target">signos</span>} do usuario, tambem armazenar essas informaçoes em um {<span className="target">banco de dados</span>} que podem ser acessadas a qualquer momento.</p>,
         difficults: <p>pt/br pt/b1r pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br </p>,
         solution: <p>pt/br pt/br 2pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br </p>,
         features: [
@@ -36,7 +35,7 @@ export default  {
 
     },
     info:{
-        title:'Spotify-Clone',
+        title:'Sign',
         img: img,
         urls: {
             visit: '#',
