@@ -2,11 +2,9 @@ import React, {useContext } from 'react'
 import './portfolio.css'
 import Project from '../project/project'
 import proj1Data from '../../elements-Data/projects/proj1'
+import proj2Data from '../../elements-Data/projects/proj2'
 import SpotifyClone from '../../elements-Data/projects/spotifyClone'
 import Sign from '../../elements-Data/projects/sign'
-
-import Tilt from '../../assets/svg/tilt/Tilt'
-import TiltTop from '../../assets/svg/tiltTop/tiltTop'
 import portfolio from '../../elements-Data/portfolio/portfolio'
 
 import { LanguageContext } from '../../context/languageContext'
@@ -16,19 +14,19 @@ function Portfolio() {
 
     return (
 
-        <div className="portfolio">
-            <TiltTop/>
+        <div id="portfolio">
+
             <div className="title-port">
-                <h3>{portfolio[Language].title}</h3>
+                <h2>{portfolio[Language].title}</h2>
                 <p>{portfolio[Language].subtext}</p>
             </div>
 
             <div className="projects">
-                <Project data={SpotifyClone} />
+                <Project data={Sign} /> 
+                <Project data={SpotifyClone} /> 
+                <Project data={proj2Data} />
                 <Project data={proj1Data} />
-                <Project data={Sign} />
             </div>
-            <Tilt></Tilt>
         </div>
     )
 }

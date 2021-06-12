@@ -1,4 +1,5 @@
-import img from '../../assets/imgs/Chat.webp'
+import img from '../../assets/imgs/imagem.jpg'
+// eslint-disable-next-line import/no-anonymous-default-export
 export default  {
     eng:{
         description: 'This app is hosted on heroku free plan, meaning that on the initial load, the server mat neet to start which can cause a delay.',
@@ -21,10 +22,16 @@ export default  {
         title:'Chat-App',
         img: img,
         urls: {
-            visit: '#',
+
+            visit: 'https://www.google.com.br/',
             code: '#',
             details: '#',
         },
+        technologies: [
+            'React JS',
+            'React-router-dom',
+            'Axios',
+            'fontawesome']
     }
     
 }

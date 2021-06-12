@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import './home.css'
 import home from '../../elements-Data/home/home'
 
@@ -17,11 +17,12 @@ function Header() {
     const { Language } = useContext(LanguageContext)
 
     return (
-        <div className="Home">
+        <>
+        <div id="Home">
 
             <NavHeader></NavHeader>
 
-            <div className="Home-Content">
+            <div id="Home-Content">
 
 
                 <div className="intro">
@@ -40,6 +41,8 @@ function Header() {
             <Waves />
             <Dots />
         </div>
+        <div className="transicao"></div>
+        </>
     )
 }
 

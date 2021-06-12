@@ -1,6 +1,6 @@
 .custom-shape-divider-bottom-1613724039 {
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -12,7 +12,7 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 98px;
+    height: 200px;
     transform: rotateY(180deg);
 }
 

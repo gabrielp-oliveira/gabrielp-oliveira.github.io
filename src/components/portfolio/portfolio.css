@@ -1,4 +1,4 @@
-.portfolio{
+#portfolio{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,8 +6,9 @@
     font-family: 'Montserrat', sans-serif;
     position: relative;
     /* filter: opacity(0.9); */
-     
+    padding: 10px;
     }
+
 .title-port{
     display: flex;
     flex-direction: column;
@@ -15,7 +16,8 @@
     align-items: center;
     margin: 20px 0px;
     width: 100%;
-    color: white;
+    color: var(--Body);
+    filter: invert(1);
 }
 .title-port > p {
     font-family: 'Roboto Slab', serif;
@@ -25,34 +27,20 @@
     justify-content: center;
 }
 
-.title-port > h3 {
+.title-port > h2 {
     font-family: 'Spartan', sans-serif;
-    color: rgb(0, 160, 133);
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin: 5px 20px;
     width: 100%;
 }
-.title-port > h3::after{
-    content: '';
-    display: block;
-    width: 50%;
-    height: 2px;
-background: linear-gradient(90deg, rgba(34,39,195,0.5) 0%, transparent 100%);
-    margin: 0px 20px;
-}
-.title-port > h3::before{
-    content: '';
-    display: block;
-    width: 50%;
-    height: 2px;
-background: linear-gradient(90deg, transparent 0%, rgba(34,39,195,0.5) 100%);
-
-    margin: 0px 20px;
-}
 
 
 
+.title-port > p {
+    text-align: center;
+    
+  }
 
 
 .projects{
@@ -60,5 +48,5 @@ background: linear-gradient(90deg, transparent 0%, rgba(34,39,195,0.5) 100%);
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }

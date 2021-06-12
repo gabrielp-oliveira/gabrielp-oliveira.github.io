@@ -9,9 +9,11 @@ function App() {
       <Home></Home>
       <main>
 
-      <About></About>
-      <Portfolio></Portfolio>
-      <Contact/>
+        <div className="body-conteiner">
+          <About></About>
+          <Portfolio></Portfolio>
+          <Contact />
+        </div>
       </main>
     </div>
   );

@@ -1,12 +1,12 @@
-.Home-Content{
+#Home-Content{
     display: flex;
     flex-direction: column;
     align-self: center;
 }
-.Home{
+#Home{
     position: relative;
     width: 100%;
-    height: 96vh;
+    height: 100vh;
     background: rgb(238,174,212);
     background: linear-gradient(135deg, rgba(238,174,212,1) 0%, rgba(116,116,221,1) 100%);
       
@@ -41,25 +41,29 @@
 
 .social {
     color: white;
-    margin-left: 10px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
+    margin-top: 20px;
     
 }
-.social > span {
+.social > span > svg {
     display: flex;
     align-items: center;
-    padding: 20px;
     margin: 0px 2px;
-    height: 100%;
+    height: 2rem;
     transition: ease-in 200ms;
     font-size: 26px;
     cursor: pointer;
+    margin: 2px 1rem;
 
 }
-.social >span:hover{
+.social >span > svg:hover{
     color: rgb(62, 192, 116);
+}
+.transicao {
+    width: 100%;
+    height: 150px;
+    background: red;
 }

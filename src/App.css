@@ -1,15 +1,22 @@
 :root {
-  --Light: rgb(133, 96, 2);
-  --Dark: rgb(5, 0, 32);
+  --Dark: rgb(228, 190, 96);
+  --Body: rgb(5, 5, 5);
 }
 
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box; 
+  transition: 50ms;
+
 }
+
 html, body, #root, .app {
   height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .App {
@@ -20,8 +27,43 @@ html, body, #root, .app {
 
 main {
   width: 100%;
-  margin: 0 auto
+  margin: 0 auto;
+  padding: 50px;
+  background: var(--Body);
+  height: 100%;
 }
+.body-conteiner {
+  border: 1px solid rgb(255, 255, 255, 0.02);
+  background: rgb(255, 255, 255, 0.02);
+  border-radius: 20px;
+  height: 100%;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+footer {
+  width: 100%;
+  height: 150px;  
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+ }
+ ::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 15px;
+ }
+ ::-webkit-scrollbar-thumb:hover{
+  transition: 500ms ease-in;
+
+  background: rgb(85, 85, 85);
+ }
+ ::-webkit-scrollbar-track{
+  background: var(--Body);
+  border-radius: 12px;
+  box-shadow: inset 7px 10px 12px transparent;
+ }
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 /* font-family: 'Montserrat', sans-serif; */
@@ -34,11 +76,29 @@ main {
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 /* font-family: 'Roboto Slab', serif; */
 /* Light 300 light texts*/
+
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
 /* font-family: 'Work Sans', sans-serif;  */
 /* Medium 500 header / text */
 
-@media (max-width: 520px) {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap');
+/* Roboto Mono
+Regular 500 italic */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+/* Oswald
+Semi-bold 600 */
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+/* PT Sans
+Bold 700 */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+/* Source Sans Pro
+Regular 400 */
+
+
+@media (max-width: 550px) {
   .navBar {
     display: none;
   }
@@ -52,20 +112,31 @@ main {
   .form > span {
     font-size: 12px;
   }
+
+  .projDesc > span{
+    font-size: 12px;
+  }
+  .projDesc > h3{
+    font-size: 16px;
+
+  }
+
+  main{
+    padding: 10px;
+  }
  }
 
-@media (min-width: 521px) { 
+@media (min-width: 551px) { 
   .form {
     width: 500px;
     padding: 30px;
   }
-
  }
 
 
 
 @media (max-width: 430px) { 
-  .proj {
+  /* .proj {
     width: 100%;
     margin: 30px 0px;
   }
@@ -74,22 +145,39 @@ main {
   }
   .form-top > div {
     width: 100%;
-  }
+  } */
 
  }
 
 @media (min-width: 431px) { 
 
-  .proj {
-    margin: 30px;
+  /* .proj {
+    margin: 30px 0px;
   }
   .proj-info{
-    width: 350px;
+    width: 431px;
+  }
+  .img {
+    height: 320px;
   }
   .form-top{
     flex-direction: row;
   }
   .form-top > div {
     width: 49%;
+  } */
+ }
+
+
+@media (max-width: 975px) { 
+   /* .proj  {
+    flex-direction: column;
+   } */
+
   }
+@media (min-width: 976px) { 
+  /* .proj {
+    flex-direction: row;
+  } */
+
  }

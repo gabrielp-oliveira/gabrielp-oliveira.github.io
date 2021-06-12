@@ -1,64 +1,102 @@
-import React, { useState ,useEffect, useContext} from 'react'
-import './project.css'
+import React, { useContext, useState, useEffect, useRef } from "react";
+import "./project.css";
+import Dialog from '@material-ui/core/Dialog';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import Button from '@material-ui/core/Button';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub} from '@fortawesome/free-brands-svg-icons'
-import { faDesktop, faSearch} from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faDesktop, faTimes } from '@fortawesome/free-solid-svg-icons'
 
-import { LanguageContext } from '../../context/languageContext'
+import { LanguageContext } from "../../context/languageContext";
 
-function Project({data}) {
-    const { Language } = useContext(LanguageContext)
-    const [feature, setFeature] = useState([])
-    let cont = 0 
+function Project({ data }) {
+  const { Language } = useContext(LanguageContext);
+  const [open, setOpen] = useState(false);
+  const [tec, setTec] = useState([]);
 
-    
-    return (
-        <div className="proj">
+  const projDesc = useRef();
+  const img = useRef();
 
-            <div className="proj-info">
-                <h3>{data.info.title}</h3>
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
 
-                <img className="img" src={data.info.img} alt={data.info.title} />
-                <div className="proj-buttons">
-      
-                    <a href={data.info.urls.visit}><button aria-label="Left Align"><FontAwesomeIcon icon={faDesktop}/></button></a>
-                    <a href={data.info.urls.code}><button aria-label="Center Align"><FontAwesomeIcon icon={faGithub}/></button></a>
-                    <a href={data.info.urls.details}><button aria-label="Right Align"><FontAwesomeIcon icon={faSearch}/></button></a>
-                </div>
+  const handleClose = () => {
+    setOpen(false);
+  };
 
-                <div>
-                    {/* {data[Language].description} */}
-                    {data[Language].function}
-                </div>
-            </div>
-            {/* <div className="proj-description">
-                <div >
-                    <h3>{data[Language].headers[0]}</h3>
-                    {data[Language].function}
-                </div>
-                <div >
-                    <h3>{data[Language].headers[1]}</h3>
-                    {data[Language].difficults}
-                </div>
-                <div >
-                    <h3>{data[Language].headers[2]}</h3>
-                    {data[Language].solution}
+  useEffect(() => {
+    data.info.technologies.forEach(element => {
+        setTec(oldArray => [...oldArray, <strong key={element}>{element} &nbsp;</strong>])
+    });
+  }, [data.info.technologies])
+  
+  function projMouseEnter(e){
+    img.current.style.opacity = 1
+    projDesc.current.style.opacity = 0
+  }
+  
+  function projMouseLeave (e){
+    img.current.style.opacity = '0.3'
+    projDesc.current.style.opacity = 1
+  }
+  return (
+    <div className="proj" onMouseEnter={e => projMouseEnter(e)} onMouseLeave={e => projMouseLeave(e)}>
+      <div className="proj-info" onClick={handleClickOpen}>
 
-                </div>
-                <div className="features">
-                    <h3>{data[Language].headers[3]}</h3>
-                    {data[Language].features}
-                </div>
-            </div> */}
-
-
-
-
-
-
+        <div className="proj-Card">
+          <img className="img" src={data.info.img} alt={data.info.title} ref={img}/>
+          <div ref={projDesc} className="projDesc">
+            <h3>{data.info.title}</h3>
+            <span>{data[Language].function}</span>
+          </div>
         </div>
-    )
+      </div>
+
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+        PaperProps={{
+            style: {
+              backgroundColor: 'white',
+            },
+          }}
+      >
+        <DialogTitle id="alert-dialog-title">{data.info.title}</DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description" >
+            {data[Language].function}
+          </DialogContentText>
+              <br />
+          <DialogContentText id="alert-dialog-description" >
+            {data[Language].features}
+          </DialogContentText>
+              <hr />
+              <br/>
+          <DialogContentText id="alert-dialog-description" >
+            {tec}
+          </DialogContentText>
+
+        </DialogContent>
+        <div className="project-buttons">
+          <Button onClick={handleClose} color="secondary">
+            <FontAwesomeIcon icon={faTimes} className="fa-2x"/>
+          </Button>
+          <Button color="primary"  href={data.info.urls.visit} target="_blank">
+            <FontAwesomeIcon icon={faDesktop} className="fa-2x"/>
+          </Button>
+          <Button color="primary"  autoFocus  href={data.info.urls.code} target="_blank">
+            <FontAwesomeIcon icon={faGithub}  className="fa-2x" />
+          </Button>
+        </div>
+      </Dialog>
+    </div>
+  );
 }
 
-export default Project
+export default Project;

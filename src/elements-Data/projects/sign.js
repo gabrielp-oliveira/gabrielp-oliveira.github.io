@@ -1,10 +1,11 @@
-import img from '../../assets/imgs/sign.webp'
+import img from '../../assets/imgs/sign.jpg'
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default  {
     eng:{
         description: <p>This app is hosted on {<span className="target">heroku</span>}  free plan, meaning that on the initial load, the server mat neet to start which can cause a {<span className="target">delay</span>}.</p>,
 
-        function:<p>having user {<span className="target">authentication functionality</span>}, it is possible to obtain the {<span className="target" >user's</span>} playlists, with their music, authors and albums.</p>,
+        function:<p>having the features of {<span className="target">Registration and Login  </span>} it is possible to obtain the user's {<span className="target">Vedic astrology signs</span>}, also store this information in a {<span className="target">database</span>} that can be accessed at any time.</p>,
 
         difficults: <p>english english englis4h english english english english english english english english english english english english english english english english english english</p>,
 
@@ -14,7 +15,7 @@ export default  {
         <span key="1">get the user's {<span className="target">playlist</span>} with the description and tracks</span>,
         <span key="2">a {<span className="target">30 seconds preview </span>} of each track from the user playlist</span>,
         <span key="3">Albums {<span className="target">Recently Played</span>} by the user</span>,
-        <span key="4">the {<span className="target">most searched artists</span>} by the user</span>
+        <span key="4">the {<span className="target">most searched artists</span>} by the user.</span>
     ],
 
 
@@ -22,7 +23,7 @@ export default  {
     },
     pt:{
         description: <p>Este aplicativo está hospedado no plano gratuito do {<span className="target">heroku</span>}, o que significa que na primeira iniciação, o servidor pode causar um {<span className="target">atraso</span>}.</p>,
-        function: <p>possuindo as duncionalidades de {<span className="target">Login e Registro</span>} é possivel obter os {<span className="target">signos</span>} do usuario, tambem armazenar essas informaçoes em um {<span className="target">banco de dados</span>} que podem ser acessadas a qualquer momento.</p>,
+        function: <p>possuindo as funcionalidades de {<span className="target">Registro e Login</span>} é possivel obter os {<span className="target">signos da astrologia védica</span>} do usuario, tambem armazenar essas informaçoes em um {<span className="target">banco de dados</span>} que podem ser acessadas a qualquer momento.</p>,
         difficults: <p>pt/br pt/b1r pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br </p>,
         solution: <p>pt/br pt/br 2pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br pt/br </p>,
         features: [
@@ -42,6 +43,11 @@ export default  {
             code: '#',
             details: '#',
         },
+        technologies: [
+            'React JS',
+            'React-router-dom',
+            'Axios',
+            'fontawesome']
     }
     
 }

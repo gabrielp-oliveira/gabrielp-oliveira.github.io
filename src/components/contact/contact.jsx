@@ -1,19 +1,26 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import './contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
-import Tilt from '../../assets/svg/tilt/Tilt'
+import { faLinkedin, faCodepen, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 function Contact() {
 
 
 
     return (
-        <div className="contact">
+        <div id="contact">
+            <h2>contact</h2>
+
             <form className="form">
-                <h2>contact</h2>
                 <span>Feel free to get in touch, I will return as soon as possible.</span>
-                <p className="mb-2"><a href="mailto:gabriel.pso100@gmail.com">Send a email. <FontAwesomeIcon icon={faPaperPlane}/></a></p>
+                <div className="social">
+                        <span><FontAwesomeIcon icon={faGithub} /></span>
+                        <span><FontAwesomeIcon icon={faCodepen} /></span>
+                        <span><FontAwesomeIcon icon={faLinkedin} /></span>
+
+                    </div>
+                <p ><a href="mailto:gabriel.pso100@gmail.com" className="emailContact">Send a email. <FontAwesomeIcon icon={faPaperPlane}/></a></p>
 
                 <div className="form-top">
                     <div className="input-conteiner">

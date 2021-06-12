@@ -7,11 +7,11 @@ import reportWebVitals from './reportWebVitals';
 import LanguageContext from './context/languageContext'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <>
     <LanguageContext>
       <App />
     </LanguageContext>
-  </React.StrictMode>,
+  </>,
   document.getElementById('root')
 );
 

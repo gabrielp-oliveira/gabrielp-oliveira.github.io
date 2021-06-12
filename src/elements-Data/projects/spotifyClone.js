@@ -1,5 +1,5 @@
-import img from '../../assets/imgs/spotifyClone.webp'
-// import React from 'react'
+/* eslint-disable import/no-anonymous-default-export */
+import img from '../../assets/imgs/spotifyClone.png'
 
 export default  {
     eng:{
@@ -12,10 +12,10 @@ export default  {
         solution: <p>english english english english english english english english english english english english english english english engli3sh english english english english english</p>,
 
         features: [
-        <span key="1">get the user's {<span className="target">playlist</span>} with the description and tracks</span>,
-        <span key="2">a {<span className="target">30 seconds preview </span>} of each track from the user playlist</span>,
-        <span key="3">Albums {<span className="target">Recently Played</span>} by the user</span>,
-        <span key="4">the {<span className="target">most searched artists</span>} by the user</span>
+        <span key="1">get the user's {<span className="target">playlist</span>} with the description and tracks, </span>,
+        <span key="2">a {<span className="target">30 seconds preview </span>} from each track from the user playlist, </span>,
+        <span key="3">Albums {<span className="target">Recently Played</span>} by the user, </span>,
+        <span key="4">the {<span className="target">most searched artists</span>} by the user.</span>
     ],
 
 
@@ -43,6 +43,7 @@ export default  {
             code: '#',
             details: '#',
         },
+        technologies: ['React JS','spotify web api']
     }
     
 }
