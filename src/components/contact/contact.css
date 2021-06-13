@@ -91,7 +91,7 @@
     border-top: 1px solid rgb(0, 0, 0, 0.9); */
 }
 .form-top > div> input:focus, .subject > input:focus {
-    background: rgb(0, 0, 0, 0.3);
+    background: rgb(0, 0, 0, 0.7);
 }
 .form-top > div> label, .subject > label {
     color: white;
@@ -120,7 +120,7 @@
     font-size: 17px ;
 }
 .message > textarea:focus{
-    background: rgb(0, 0, 0, 0.3);
+    background: rgb(0, 0, 0, 0.7);
 
 }
 .input-conteiner{
@@ -145,4 +145,14 @@
 .form > button:hover {
     background: rgba(255, 255, 255, 0.7);
 
+}
+.okButton {
+    background: rgb(45, 76, 212)!important;
+    color: white!important;
+    margin-top: 20px!important;
+}
+.focus {
+    font-family: 700;
+    font-size: large;
+    text-decoration: underline;
 }
