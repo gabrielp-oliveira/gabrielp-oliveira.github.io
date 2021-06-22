@@ -7,8 +7,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; 
-  transition: 50ms;
-
 }
 
 html, body, #root, .app {
@@ -23,14 +21,17 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: var(--Body);
 }
 
 main {
   width: 100%;
   margin: 0 auto;
-  padding: 50px;
+  padding: 50px 10%;
   background: var(--Body);
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 .body-conteiner {
   border: 1px solid rgb(255, 255, 255, 0.02);
@@ -39,7 +40,61 @@ main {
   height: 100%;
   padding-bottom: 20px;
   margin-bottom: 50px;
+  max-width: 2300px;
 }
+.title {
+  margin-top: 60px;
+}
+.title::before {
+  content: '<h2>';
+  font-family: 'La Belle Aurore',cursive;
+  color: var(--Body);
+  filter: invert(0.4);
+  font-size: 18px;
+  margin-top: -2rem;
+  position: relative;
+  font-weight: 100;
+}
+.title::after {
+  content: '</h2>';
+  font-family: 'La Belle Aurore',cursive;
+  color: var(--Body);
+  filter: invert(0.4);
+  font-size: 18px;
+  position: relative;
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: row-reverse;
+  font-weight: 100;
+}
+
+.subText::before {
+  content: '<p>';
+  font-family: 'La Belle Aurore',cursive;
+  color: var(--Body);
+  filter: invert(0.4);
+   font-size: 18px;
+  position: relative;
+  margin-top: -1rem;
+  right: 0.5rem;
+  font-weight: 100;
+}
+.subText::after {
+  content: '<p>';
+  font-family: 'La Belle Aurore',cursive;
+  color: var(--Body);
+  filter: invert(0.4);
+  font-size: 18px;
+  position: relative;
+  margin-top: 0rem;
+  left: 0rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  font-weight: 100;
+}
+
+
 footer {
   width: 100%;
   height: 150px;  
@@ -81,10 +136,6 @@ footer {
 /* font-family: 'Work Sans', sans-serif;  */
 /* Medium 500 header / text */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap');
-/* Roboto Mono
-Regular 500 italic */
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 /* Oswald
 Semi-bold 600 */
@@ -97,7 +148,23 @@ Bold 700 */
 /* Source Sans Pro
 Regular 400 */
 
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+/* La Belle Aurore
+Regular 400 */
+/* font-family: 'La Belle Aurore', cursive; */
 
+@media (max-width: 380px) {
+  .iconAbout {
+    width: 250px;
+    height: 250px;
+  }
+  .projDesc {
+    display: none;
+  }
+  .img {
+    invert: 15important;
+  }
+}
 @media (max-width: 550px) {
   .navBar {
     display: none;
@@ -109,21 +176,19 @@ Regular 400 */
     width: 100%;
     padding: 10px;
   }
-  .form > span {
-    font-size: 12px;
-  }
-
-  .projDesc > span{
-    font-size: 12px;
-  }
   .projDesc > h3{
     font-size: 16px;
-
+  }
+  .about {
+    margin: 0px;
   }
 
   main{
     padding: 10px;
   }
+  /* .navHeader {
+    padding: 0px ;
+  } */
  }
 
 @media (min-width: 551px) { 
@@ -131,6 +196,12 @@ Regular 400 */
     width: 500px;
     padding: 30px;
   }
+  .about {
+    margin-left: 30px;
+  }
+  /* .navHeader {
+    padding: 0px 5%;
+  } */
  }
 
 
@@ -146,7 +217,23 @@ Regular 400 */
   .form-top > div {
     width: 100%;
   } */
+  .navHeader-Container {
+    padding: 0;
+  }
+  .about > p {
+    font-size: 20px;
+  }
+  .intro  {
+    width: 380px;
+  }
+  .intro > h1 {
+    font-size: 26px;
+  }
+  
+  .intro > h2 {
+    font-size: 16px;
 
+  }
  }
 
 @media (min-width: 431px) { 
@@ -166,6 +253,9 @@ Regular 400 */
   .form-top > div {
     width: 49%;
   } */
+  .about > p {
+    font-size: 25px;
+  }
  }
 
 
@@ -181,3 +271,4 @@ Regular 400 */
   } */
 
  }
+

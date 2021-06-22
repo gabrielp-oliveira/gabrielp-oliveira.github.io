@@ -7,6 +7,7 @@
     position: relative;
     /* filter: opacity(0.9); */
     padding: 10px;
+    margin-top: 30px;
     }
 
 .title-port{
@@ -21,7 +22,7 @@
 }
 .title-port > p {
     font-family: 'Roboto Slab', serif;
-    font-weight: 500;
+    font-weight: 600;
     margin: 5px;
     display: flex;
     justify-content: center;
@@ -31,7 +32,6 @@
     font-family: 'Spartan', sans-serif;
     display: flex;
     justify-content: center;
-    margin: 5px 20px;
     width: 100%;
 }
 
@@ -48,5 +48,5 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }

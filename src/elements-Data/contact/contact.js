@@ -21,7 +21,7 @@ export default  {
     },
     pt:{
         contact:'Contato',
-        text:'Entre em contato, retornarei assim que possivel.',
+        text:'fique avontade para entrar em contato, retornarei assim que possivel.',
         emailMessage: 'Envie um email.',
         name:'Nome',
         subject:'Assunto',

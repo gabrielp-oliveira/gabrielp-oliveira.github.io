@@ -7,6 +7,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
+    min-height: 560px;
     background: rgb(238,174,212);
     background: linear-gradient(135deg, rgba(238,174,212,1) 0%, rgba(116,116,221,1) 100%);
       
@@ -31,12 +32,23 @@
     background: rgb(0, 0, 0, 0.4);
     padding: 50px;
     width: 450px;
+    font-family: 'Spartan', sans-serif;
+
 }
 .intro > h2 {
-    font-size: 24px;
+    font-size: 22px;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 .intro > h1 {
-    font-size: 38px;
+    font-size: 34px;
+    margin-bottom: 5px;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 .social {

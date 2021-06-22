@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import './portfolio.css'
 import Project from '../project/project'
 // import proj1Data from '../../elements-Data/projects/proj1'
-import proj2Data from '../../elements-Data/projects/proj2'
+import WhatsAppClone from '../../elements-Data/projects/WhatsAppClone'
 import SpotifyClone from '../../elements-Data/projects/spotifyClone'
 import Sign from '../../elements-Data/projects/sign'
 import portfolio from '../../elements-Data/portfolio/portfolio'
@@ -17,14 +17,14 @@ function Portfolio() {
         <div id="portfolio">
 
             <div className="title-port">
-                <h2>{portfolio[Language].title}</h2>
-                <p>{portfolio[Language].subtext}</p>
+                <h2 className="title">{portfolio[Language].title}</h2>
+                <p className="subText">{portfolio[Language].subtext}</p>
             </div>
 
             <div className="projects">
                 <Project data={Sign} /> 
                 <Project data={SpotifyClone} /> 
-                <Project data={proj2Data} />
+                <Project data={WhatsAppClone} />
                 {/* <Project data={proj1Data} /> */}
             </div>
         </div>

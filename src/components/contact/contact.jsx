@@ -76,7 +76,6 @@ function Contact() {
 
 
   useEffect(() => {
-      console.log(emailValid.risk <= 49 && emailValid.valid)
     if(emailValid.risk <= 49 && emailValid.valid){
         emailjs.sendForm(
             process.env.REACT_APP_EMAIL_ID,
@@ -98,7 +97,7 @@ function Contact() {
 
   return (
     <div id="contact">
-      <h2>{contact[Language].contact}</h2>
+      <h2 className="title">{contact[Language].contact}</h2>
 
       <form className="form" ref={form} onSubmit={sendEmail}>
         <span>{contact[Language].text}</span>

@@ -7,7 +7,7 @@ import Brasil from '../../assets/imgs/brasil.webp'
 import Usa from '../../assets/imgs/usa.webp'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAdjust } from '@fortawesome/free-solid-svg-icons'
+import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
 
 import Sandwich from './Sandwich'
 
@@ -43,7 +43,7 @@ function NavHeader() {
             icon.style.filter = 'none'
             form.style.background = 'rgb(0, 0, 0, 0.2)'
             bodyConteiner.style.background = 'rgb(0, 0, 0, 0.2)'
-            transition.style.background = 'linear-gradient(0deg, rgb(255,255,255) 20%, var(--Dark) 100%)'
+            transition.style.background = 'linear-gradient(0deg, rgb(255,255,255) 0%, var(--Dark) 100%)'
             SetAdjust('Light')
         } else {
             root.style.cssText = "--Dark: rgb(5, 0, 32)";
@@ -72,6 +72,8 @@ function NavHeader() {
     }
 
     return (
+        <div className="navHeader-Container">
+
         <div className="navHeader">
             <div className="navBar">
                 <span> <a href="#Home">{navheader[Language].home}</a></span>
@@ -88,10 +90,11 @@ function NavHeader() {
                     {Flag}
                 </div>
                 <div className="adjustIcon" onClick={e => adjustLight(e)} draggable="false">
-                    <FontAwesomeIcon icon={faAdjust} />
+                    <FontAwesomeIcon icon={faLightbulb} />
                 </div>
 
             </div>
+        </div> 
 
         </div>
     )

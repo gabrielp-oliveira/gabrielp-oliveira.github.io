@@ -15,6 +15,7 @@
     margin-bottom: 30px;
     color: var(--Body);
     filter: invert(1);
+    font-family: 'Spartan', sans-serif;
 
 
 }
@@ -50,6 +51,8 @@
 .form > span {
     color: var(--Body);
     filter: invert(1);
+    text-align: center;
+    font-weight: 600;
 }
 .form > .social {
     color: var(--Body);
@@ -74,6 +77,10 @@
     width: 100%;
     margin-bottom: 5px;
 
+}
+.input-conteiner  svg  {
+    color: var(--Body);
+    filter: invert(0.8);
 }
 .form-top > div> input, .subject > input {
     width: 100%;

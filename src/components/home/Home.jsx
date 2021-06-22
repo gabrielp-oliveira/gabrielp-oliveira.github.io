@@ -16,6 +16,8 @@ function Header() {
 
     const { Language } = useContext(LanguageContext)
 
+
+
     return (
         <>
         <div id="Home">
@@ -26,7 +28,7 @@ function Header() {
 
 
                 <div className="intro">
-                    <h1>Lorem ipsum dolor</h1>
+                    <h1>Gabriel P. Oliveira</h1>
 
                     <h2>{home[Language]}</h2>
                     <div className="social">
