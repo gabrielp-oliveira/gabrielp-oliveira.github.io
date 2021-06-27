@@ -28,6 +28,7 @@ main {
   width: 100%;
   margin: 0 auto;
   padding: 50px 10%;
+  padding-bottom: 20px;
   background: var(--Body);
   height: 100%;
   display: flex;
@@ -39,7 +40,7 @@ main {
   border-radius: 20px;
   height: 100%;
   padding-bottom: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   max-width: 2300px;
 }
 .title {
@@ -80,7 +81,7 @@ main {
   font-weight: 100;
 }
 .subText::after {
-  content: '<p>';
+  content: '</p>';
   font-family: 'La Belle Aurore',cursive;
   color: var(--Body);
   filter: invert(0.4);
@@ -161,9 +162,6 @@ Regular 400 */
   .projDesc {
     display: none;
   }
-  .img {
-    invert: 15important;
-  }
 }
 @media (max-width: 550px) {
   .navBar {
@@ -197,7 +195,8 @@ Regular 400 */
     padding: 30px;
   }
   .about {
-    margin-left: 30px;
+    margin: 0px 10px 10px 30px;
+
   }
   /* .navHeader {
     padding: 0px 5%;
@@ -258,17 +257,4 @@ Regular 400 */
   }
  }
 
-
-@media (max-width: 975px) { 
-   /* .proj  {
-    flex-direction: column;
-   } */
-
-  }
-@media (min-width: 976px) { 
-  /* .proj {
-    flex-direction: row;
-  } */
-
- }
 

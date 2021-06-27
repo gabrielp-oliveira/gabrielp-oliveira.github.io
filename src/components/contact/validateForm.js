@@ -12,6 +12,20 @@ function checkEmailDomain(email){
             "x-rapidapi-host": process.env.REACT_APP_X_RAPID_API_HOST
         }
     })
+    .then(data => data.json())
+    .then(data => {
+        if(data.risk < 10 && data.valid){
+            return {
+                risk: data.risk,
+                text: 'OK',
+                reason: data.reason
+            }
+        }else{
+            // eslint-disable-next-line no-throw-literal
+            throw  {error: `${data.text}, ${data.reason}`}
+            }
+        }
+    )
 }
 
 function validateForm(formulario) {

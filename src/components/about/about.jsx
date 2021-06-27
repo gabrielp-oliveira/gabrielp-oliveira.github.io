@@ -49,7 +49,7 @@ function About() {
             <span><FontAwesomeIcon icon={faJs} />Java Scvript</span>
             <span><FontAwesomeIcon icon={faCss3Alt} />Css 3</span>
             <span><FontAwesomeIcon icon={faNode} />Node Js</span>
-            {/* <span><FontAwesomeIcon icon={faJava} />Java</span> */}
+            <span><FontAwesomeIcon icon={faJava} />Java</span>
         </div>
       </div>
     </>

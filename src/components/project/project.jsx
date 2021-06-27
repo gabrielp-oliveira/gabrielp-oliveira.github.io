@@ -48,7 +48,7 @@ function Project({ data }) {
       <div className="proj-info" onClick={handleClickOpen}>
 
         <div className="proj-Card">
-          <img className="img" src={data.info.img} alt={data.info.title} ref={img} w/>
+          <img className="img" src={data.info.img} alt={data.info.title} ref={img} />
           <div ref={projDesc} className="projDesc">
             <h3>{data.info.title}</h3>
             <span>{data[Language].description}</span>

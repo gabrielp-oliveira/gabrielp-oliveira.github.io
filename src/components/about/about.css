@@ -19,7 +19,6 @@
     /* font-family: 'Oswald', sans-serif; */
     /* font-family: 'PT Sans', sans-serif; */
     font-family: 'Source Sans Pro', sans-serif;
-    margin: 0px 10px 10px 30px;
     text-align: justify;
     font-weight: 500;
     align-self: center;
@@ -49,7 +48,7 @@
     content: '<button>';
     font-family: 'La Belle Aurore',cursive;
     color: var(--Body);
-    filter: invert(0.4);
+    filter: invert(0.6);
     font-size: 18px;
     position: relative;
     right: 15px;
@@ -61,7 +60,7 @@
     content: '</button>';
     font-family: 'La Belle Aurore',cursive;
     color: var(--Body);
-    filter: invert(0.4);
+    filter: invert(0.6);
     font-size: 18px;
     position: relative;
     top: 10px;

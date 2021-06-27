@@ -3,26 +3,26 @@ import './navheader.css'
 import navheader from '../../elements-Data/navheader/navheader'
 import { LanguageContext } from '../../context/languageContext'
 
-import Brasil from '../../assets/imgs/brasil.webp'
-import Usa from '../../assets/imgs/usa.webp'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
+import { faLightbulb, faLanguage } from '@fortawesome/free-solid-svg-icons'
 
-import Sandwich from './Sandwich'
+import SideMenu from './sideMenu.jsx'
+
 
 function NavHeader() {
     const { Language, SetLanguage } = useContext(LanguageContext)
-    const [Flag, SetFlag] = useState()
+    const [ outPutLanguage, SetOutPutLanguage ] = useState()
+
     const [Adjust, SetAdjust] = useState('Light')
 
     useEffect(() => {
+
         if (navigator.language === 'pt') {
-            SetFlag(<img draggable="false" src={Usa} alt="Usa flag" value="eng" />)
             SetLanguage('pt')
+            SetOutPutLanguage('eng')
         } else {
             SetLanguage('eng')
-            SetFlag(<img draggable="false" src={Brasil} alt="brasil flag" value="pt" />)
+            SetOutPutLanguage('pt/br')
         }
         adjustLight()
     }, [])
@@ -61,14 +61,13 @@ function NavHeader() {
 
     function changelanguage() {
 
-        if (Flag.props.value === 'pt') {
-            SetFlag(<img draggable="false" src={Usa} alt="Usa flag" value="eng" />)
-            SetLanguage(Flag.props.value)
+        if (Language === 'pt') {
+            SetLanguage('eng')
+            SetOutPutLanguage('pt/br')
         } else {
-            SetFlag(<img draggable="false" src={Brasil} alt="brasil flag" value="pt" />)
-            SetLanguage(Flag.props.value)
+            SetLanguage('pt')
+            SetOutPutLanguage('eng')
         }
-        console.log(navheader[Language])
     }
 
     return (
@@ -79,15 +78,16 @@ function NavHeader() {
                 <span> <a href="#Home">{navheader[Language].home}</a></span>
                 <span> <a href="#about-conteiner">{navheader[Language].about}</a></span>
                 <span> <a href="#portfolio">{navheader[Language].portfolio}</a></span>
-                <span><a href="#contact">{navheader[Language].contact}</a> </span>
+                <span> <a href="#contact">{navheader[Language].contact}</a> </span>
             </div>
-                <Sandwich/>
+            <SideMenu/>
 
             <div className="config" >
 
 
-                <div className="flag" onClick={() => changelanguage()}>
-                    {Flag}
+                <div className="language" onClick={() => changelanguage()}>
+                    <FontAwesomeIcon icon={faLanguage} />
+                    <span>{outPutLanguage}</span>
                 </div>
                 <div className="adjustIcon" onClick={e => adjustLight(e)} draggable="false">
                     <FontAwesomeIcon icon={faLightbulb} />

@@ -86,29 +86,24 @@
 }
 .config > div {
     margin: 0px 20px;
-}
-
-
-.flag > img {
-    width: 30px;
     cursor: pointer;
-    /* display: none; */
 }
 
-.bars{
-    align-self: center;
+
+.language {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
     color: white;
-    font-size: 25px;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 0;
-    display: none;
-    margin-left: 15px;
 }
-.sandwich {
-    width: 100%;
-    height: 100%;
+.language > svg {
+    font-size: 30px;
 }
+
 .MuiMenu-list >  a {
     text-decoration: none;
     color: black;

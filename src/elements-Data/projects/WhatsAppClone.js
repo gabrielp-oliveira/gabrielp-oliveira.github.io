@@ -25,7 +25,7 @@ export default  {
             'Angular Js,',
             'Angular Material UI,',
             'Express Js,',
-            'Socket Io',
+            'Socket Io,',
             'Node Js.']
     }
     

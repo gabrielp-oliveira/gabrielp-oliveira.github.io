@@ -34,7 +34,6 @@ const useStyles = makeStyles((theme) => ({
 
 function Contact() {
   const [result, setResult] = useState("OK");
-  const [emailValid, setEmailValid] = useState({});
   const [target, setTarget] = useState();
   const { Language } = useContext(LanguageContext);
   const form = useRef();
@@ -52,19 +51,29 @@ function Contact() {
 
   function sendEmail(e) {
     e.preventDefault();
-    setTarget(e.target)
     const email = form.current.elements[1].value.trim();
     if (validateForm(form)) {
       checkEmailDomain(email)
-        .then((response) => response.json())
-        .then((element) => {
-            console.log(element)
-            setEmailValid(element)
-            
-        })
-        .catch((err) => {
+      .catch((err) => {
+        console.log(err)
+        setResult(err.error)
+        handleOpen()
+        return
+    });
+      emailjs.sendForm(
+          process.env.REACT_APP_EMAIL_ID,
+          process.env.REACT_APP_USER_ID,
+          e.target, process.env.REACT_APP_ACESS_TOKEN)
+          .then((result) => {
+              console.log(result)
+              setResult(result.text)
+              handleOpen()
+          })
+          .catch((err) => {
             console.log(err)
-            setEmailValid(err)
+            setResult(err.error)
+            handleOpen()
+            return
         });
     } else {
       console.log("form invalido");
@@ -75,25 +84,6 @@ function Contact() {
   }
 
 
-  useEffect(() => {
-    if(emailValid.risk <= 49 && emailValid.valid){
-        emailjs.sendForm(
-            process.env.REACT_APP_EMAIL_ID,
-            process.env.REACT_APP_USER_ID,
-            target, process.env.REACT_APP_ACESS_TOKEN)
-            .then((result) => {
-                console.log(result)
-                setResult(result.text)
-                setTarget()
-                handleOpen()
-            }, (error) => {
-                console.log(error)
-                setResult(error.text)
-                setTarget()
-                handleOpen()
-            });
-        }
-  }, [emailValid])
 
   return (
     <div id="contact">
@@ -103,7 +93,7 @@ function Contact() {
         <span>{contact[Language].text}</span>
         <div className="social">
           <span> <FontAwesomeIcon icon={faGithub} /> </span>
-          <span> <FontAwesomeIcon icon={faCodepen} /> </span>
+          {/* <span> <FontAwesomeIcon icon={faCodepen} /> </span> */}
           <span> <FontAwesomeIcon icon={faLinkedin} /> </span>
         </div>
         <p>
@@ -167,6 +157,7 @@ function Contact() {
                 {contact[Language].contactError.title}
               </h2>
               <br />
+              {result}
               <hr />
 
               <p id="transition-modal-description">
