@@ -35,9 +35,11 @@ function About() {
 
 
             <span className="resume">
+              <a target="blank" href={about[Language].resume}>
               <Button variant="contained" color="secondary">
                 {about[Language].button}
               </Button>
+              </a>
             </span>
           </div>
         </div>
@@ -49,7 +51,7 @@ function About() {
             <span><FontAwesomeIcon icon={faJs} />Java Scvript</span>
             <span><FontAwesomeIcon icon={faCss3Alt} />Css 3</span>
             <span><FontAwesomeIcon icon={faNode} />Node Js</span>
-            <span><FontAwesomeIcon icon={faJava} />Java</span>
+            {/* <span><FontAwesomeIcon icon={faJava} />Java</span> */}
         </div>
       </div>
     </>

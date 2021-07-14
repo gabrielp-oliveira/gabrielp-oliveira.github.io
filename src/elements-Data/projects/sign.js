@@ -17,8 +17,8 @@ export default  {
         title:'Sign',
         img: img,
         urls: {
-            visit: '#',
-            code: '#',
+            visit: 'https://gabrielp-oliveira.github.io/sign/#/sign/login',
+            code: 'https://github.com/gabrielp-oliveira/sign',
             details: '#',
         },
         technologies: [

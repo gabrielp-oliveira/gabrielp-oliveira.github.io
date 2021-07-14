@@ -133,14 +133,6 @@ footer {
 /* font-family: 'Roboto Slab', serif; */
 /* Light 300 light texts*/
 
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
-/* font-family: 'Work Sans', sans-serif;  */
-/* Medium 500 header / text */
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
-/* Oswald
-Semi-bold 600 */
-
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 /* PT Sans
 Bold 700 */
@@ -152,7 +144,6 @@ Regular 400 */
 @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
 /* La Belle Aurore
 Regular 400 */
-/* font-family: 'La Belle Aurore', cursive; */
 
 @media (max-width: 380px) {
   .iconAbout {
@@ -237,24 +228,22 @@ Regular 400 */
 
 @media (min-width: 431px) { 
 
-  /* .proj {
-    margin: 30px 0px;
-  }
-  .proj-info{
-    width: 431px;
-  }
-  .img {
-    height: 320px;
-  }
-  .form-top{
-    flex-direction: row;
-  }
-  .form-top > div {
-    width: 49%;
-  } */
+ 
   .about > p {
     font-size: 25px;
   }
  }
 
 
+ @media (max-width: 1400px) { 
+  main {
+    padding: 50px 2%;
+  }
+}
+
+@media (min-width: 1401px) { 
+  main {
+    padding: 50px 10%;
+  }
+
+ }

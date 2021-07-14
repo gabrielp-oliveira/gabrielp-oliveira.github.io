@@ -52,15 +52,17 @@
 }
 
 .social {
-    color: white;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-top: 20px;
-    
+    width: 130px;
 }
-.social > span > svg {
+.social > a {
+    color: white;
+}
+.social > a> span > svg {
     display: flex;
     align-items: center;
     margin: 0px 2px;
@@ -68,11 +70,10 @@
     transition: ease-in 200ms;
     font-size: 26px;
     cursor: pointer;
-    margin: 2px 1rem;
-
 }
-.social >span > svg:hover{
-    color: rgb(62, 192, 116);
+.social > a>span > svg:hover{
+    color: rgb(0, 89, 255);
+
 }
 .transicao {
     width: 100%;

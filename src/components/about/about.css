@@ -41,6 +41,10 @@
     transition: ease-in 250ms;
     margin: 0px 10px 10px 10px;
 }
+.resume a {
+    color: white;
+    text-decoration: none;
+}
 .resume > button {
     cursor: pointer;
 }

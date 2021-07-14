@@ -92,9 +92,8 @@ function Contact() {
       <form className="form" ref={form} onSubmit={sendEmail}>
         <span>{contact[Language].text}</span>
         <div className="social">
-          <span> <FontAwesomeIcon icon={faGithub} /> </span>
-          {/* <span> <FontAwesomeIcon icon={faCodepen} /> </span> */}
-          <span> <FontAwesomeIcon icon={faLinkedin} /> </span>
+        <a href="https://github.com/gabrielp-oliveira" target="_blank"><span> <FontAwesomeIcon icon={faGithub} /> </span></a>
+        <a href="https://www.linkedin.com/in/gabriel-97-oliveira" target="_blank"><span><FontAwesomeIcon icon={faLinkedin} /> </span></a>
         </div>
         <p>
           <a href="mailto:gabriel.pso100@gmail.com" className="emailContact">

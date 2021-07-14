@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import './portfolio.css'
 import Project from '../project/project'
-// import proj1Data from '../../elements-Data/projects/proj1'
 import WhatsAppClone from '../../elements-Data/projects/WhatsAppClone'
 import SpotifyClone from '../../elements-Data/projects/spotifyClone'
 import Sign from '../../elements-Data/projects/sign'
@@ -25,7 +24,6 @@ function Portfolio() {
                 <Project data={Sign} /> 
                 <Project data={SpotifyClone} /> 
                 <Project data={WhatsAppClone} />
-                {/* <Project data={proj1Data} /> */}
             </div>
         </div>
     )

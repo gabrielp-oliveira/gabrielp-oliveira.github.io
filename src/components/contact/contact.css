@@ -54,11 +54,11 @@
     text-align: center;
     font-weight: 600;
 }
-.form > .social {
+.form > .social >a{
     color: var(--Body);
     filter: invert(1);
 }
-.form > .social >span > svg:hover {
+.form > .social >a >span > svg:hover {
     filter: invert(2);
 
 }
