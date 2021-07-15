@@ -1,7 +1,7 @@
 import React, { useState, useContext, useRef, useEffect } from "react";
 import "./contact.css";
 import contact from "../../elements-Data/contact/contact";
-import emailjs from "../../../node_modules/emailjs-com/dist/email";
+import emailjs from "emailjs-com";
 import { LanguageContext } from "../../context/languageContext";
 import { validateForm, checkEmailDomain } from "./validateForm";
 

@@ -1,4 +1,4 @@
-import React, { useContext} from 'react';
+import React, { useContext, useEffect} from 'react';
 import './sideMenu.css'
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import Button from '@material-ui/core/Button';
@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export default function SwipeableTemporaryDrawer() {
-    const { Language, SetLanguage } = useContext(LanguageContext)
+  const { Language, SetLanguage } = useContext(LanguageContext)
   const [state, setState] = React.useState({left: false });
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -42,6 +42,13 @@ export default function SwipeableTemporaryDrawer() {
 
     </div>
   );
+  useEffect(() => {
+    if(navigator.language === 'eng'){
+      SetLanguage('eng')
+    }else{
+      SetLanguage('pt')
+    }
+  }, [])
 
   return (
     <div className="bars">
