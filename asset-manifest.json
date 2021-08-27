@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.5cfe2847.chunk.css",
-    "main.js": "/static/js/main.2c1237fe.chunk.js",
-    "main.js.map": "/static/js/main.2c1237fe.chunk.js.map",
+    "main.js": "/static/js/main.b017aab6.chunk.js",
+    "main.js.map": "/static/js/main.b017aab6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b6ce721f.js",
     "runtime-main.js.map": "/static/js/runtime-main.b6ce721f.js.map",
     "static/js/2.3b594a86.chunk.js": "/static/js/2.3b594a86.chunk.js",
@@ -13,8 +13,8 @@
     "static/css/main.5cfe2847.chunk.css.map": "/static/css/main.5cfe2847.chunk.css.map",
     "static/js/2.3b594a86.chunk.js.LICENSE.txt": "/static/js/2.3b594a86.chunk.js.LICENSE.txt",
     "static/media/imagem.37be99e3.svg": "/static/media/imagem.37be99e3.svg",
-    "static/media/pdfEng.675931fb.pdf": "/static/media/pdfEng.675931fb.pdf",
-    "static/media/pdfPtBr.ad304c5f.pdf": "/static/media/pdfPtBr.ad304c5f.pdf",
+    "static/media/pdfEng.1543fa27.pdf": "/static/media/pdfEng.1543fa27.pdf",
+    "static/media/pdfPtBr.385a8b88.pdf": "/static/media/pdfPtBr.385a8b88.pdf",
     "static/media/sign.b3567de4.jpg": "/static/media/sign.b3567de4.jpg",
     "static/media/spotifyClone.c9a51c7d.jpg": "/static/media/spotifyClone.c9a51c7d.jpg",
     "static/media/whatsAppClone.b5774754.jpg": "/static/media/whatsAppClone.b5774754.jpg"
@@ -23,6 +23,6 @@
     "static/js/runtime-main.b6ce721f.js",
     "static/js/2.3b594a86.chunk.js",
     "static/css/main.5cfe2847.chunk.css",
-    "static/js/main.2c1237fe.chunk.js"
+    "static/js/main.b017aab6.chunk.js"
   ]
 }
