@@ -16,6 +16,7 @@ function Project({ data }) {
   const { Language } = useContext(LanguageContext);
   const [open, setOpen] = useState(false);
   const [tec, setTec] = useState([]);
+  const [width, setWidth] = useState(1000)
 
   const projDesc = useRef();
   const img = useRef();
@@ -33,6 +34,24 @@ function Project({ data }) {
         setTec(oldArray => [...oldArray, <strong key={element}>{element} &nbsp;</strong>])
     });
   }, [data.info.technologies])
+
+  useEffect(() => {
+    if(window.screen.width < 1000){
+        setWidth(window.screen.width-50)
+    }
+    console.log(width)
+}, [])
+
+
+window.addEventListener('resize',(e) => {
+    if(e.target.innerWidth < 1000){
+        setWidth(e.target.innerWidth-50)
+    }else{
+        setWidth(950)
+        console.log('?')
+    }
+})
+
   
   function projMouseEnter(e){
     img.current.style.opacity = 1
@@ -45,7 +64,7 @@ function Project({ data }) {
   }
   return (
     <div className="proj" onMouseEnter={e => projMouseEnter(e)} onMouseLeave={e => projMouseLeave(e)}>
-      <div className="proj-info" onClick={handleClickOpen}>
+      <div className="proj-info" onClick={handleClickOpen} s>
 
         <div className="proj-Card">
           <img className="img" src={data.info.img} alt={data.info.title} ref={img} />

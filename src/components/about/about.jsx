@@ -29,29 +29,32 @@ function About() {
             <img src={img} alt="" width="350" className="iconAbout" />
           </div>
           <div className="about">
-            
+
             <p className="subText">{about[Language].about_text}<br></br>
-           {about[Language].about_sub_text}</p>
+              {about[Language].about_sub_text}</p>
 
 
             <span className="resume">
               <a target="blank" href={about[Language].resume}>
-              <Button variant="contained" color="secondary">
-                {about[Language].button}
-              </Button>
+                <Button variant="contained" color="secondary">
+                  {about[Language].button}
+                </Button>
               </a>
             </span>
           </div>
         </div>
-        <div className="knowledge">
+        <div>
+          <div className="knowledge">
             <span><FontAwesomeIcon icon={faReact} />React Js</span>
-            <span><FontAwesomeIcon icon={faAngular} />Angular</span>
-
             <span><FontAwesomeIcon icon={faHtml5} />HTML 5</span>
-            <span><FontAwesomeIcon icon={faJs} />Java Scvript</span>
             <span><FontAwesomeIcon icon={faCss3Alt} />Css 3</span>
+            <span><FontAwesomeIcon icon={faAngular} />Angular</span>
+          </div>
+          <div className="knowledge">
+            <span><FontAwesomeIcon icon={faJs} />Java Scvript</span>
+            <span><FontAwesomeIcon icon={faJava} />Java</span>
             <span><FontAwesomeIcon icon={faNode} />Node Js</span>
-            {/* <span><FontAwesomeIcon icon={faJava} />Java</span> */}
+          </div>
         </div>
       </div>
     </>

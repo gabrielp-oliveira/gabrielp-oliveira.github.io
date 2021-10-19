@@ -1,12 +1,11 @@
 .img{
-    width: 100%;
-    max-height: 420px;
     max-width: 1000px;
     border-radius: 10px;
     align-self: center;
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.4);
     opacity: 0.3;
     transition: 200ms ease-in;
+    height: 420px;
 }
 .img:hover {
     opacity:1;
@@ -48,7 +47,7 @@
     font-size: 14px;
 }
 .target{
-    color: rgb(171, 115, 235);
+    color: rgb(231, 156, 156);
     font-weight: 600;
 }
 
@@ -76,5 +75,7 @@
     position: absolute;
     bottom: 0;
     height: 60%
-
+}
+.projDesc > span {
+    font-size: 20px;
 }

@@ -14,8 +14,8 @@ import { Button } from '@material-ui/core';
 
 //-----
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faUser,faEnvelope,faPaperPlane} from "@fortawesome/free-solid-svg-icons";
-import {faLinkedin, faCodepen,faGithub} from "@fortawesome/free-brands-svg-icons";
+import { faUser, faEnvelope, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faCodepen, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -33,8 +33,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Contact() {
-  const [result, setResult] = useState("OK");
-  const [target, setTarget] = useState();
+  const [result, setResult] = useState();
+  const [target, setTarget] = useState(false);
   const { Language } = useContext(LanguageContext);
   const form = useRef();
 
@@ -43,44 +43,49 @@ function Contact() {
 
   const handleOpen = () => {
     setOpen(true);
+    form.current.reset();
+    setTarget(false)
   };
-
+  
   const handleClose = () => {
     setOpen(false);
+    setTarget(false)
   };
 
   function sendEmail(e) {
+    setTarget(true)
     e.preventDefault();
     const email = form.current.elements[1].value.trim();
     if (validateForm(form)) {
       checkEmailDomain(email)
-      .catch((err) => {
-        console.log(err)
-        setResult(err.error)
-        handleOpen()
-        return
-    });
-      emailjs.sendForm(
-          process.env.REACT_APP_EMAIL_ID,
-          process.env.REACT_APP_USER_ID,
-          e.target, process.env.REACT_APP_ACESS_TOKEN)
-          .then((result) => {
+        .then(() => {
+          emailjs.sendForm(
+            process.env.REACT_APP_EMAIL_ID,
+            process.env.REACT_APP_USER_ID,
+            e.target, process.env.REACT_APP_ACESS_TOKEN)
+            .then((result) => {
               console.log(result)
               setResult(result.text)
               handleOpen()
-          })
-          .catch((err) => {
-            console.log(err)
-            setResult(err.error)
-            handleOpen()
-            return
+            })
+            .catch((err) => {
+              console.log(err)
+              setResult(err.error)
+              handleOpen()
+              return
+            });
+        })
+        .catch((err) => {
+          console.log(err)
+          setResult(err.error)
+          handleOpen()
+          return
         });
     } else {
       console.log("form invalido");
       setResult('Error')
       handleOpen()
     }
-    form.current.reset();
   }
 
 
@@ -92,8 +97,8 @@ function Contact() {
       <form className="form" ref={form} onSubmit={sendEmail}>
         <span>{contact[Language].text}</span>
         <div className="social">
-        <a href="https://github.com/gabrielp-oliveira" target="_blank"><span> <FontAwesomeIcon icon={faGithub} /> </span></a>
-        <a href="https://www.linkedin.com/in/gabriel-97-oliveira" target="_blank"><span><FontAwesomeIcon icon={faLinkedin} /> </span></a>
+          <a href="https://github.com/gabrielp-oliveira" target="_blank" rel="noreferrer"><span> <FontAwesomeIcon icon={faGithub} /> </span></a>
+          <a href="https://www.linkedin.com/in/gabriel-97-oliveira" target="_blank" rel="noreferrer"><span><FontAwesomeIcon icon={faLinkedin} /> </span></a>
         </div>
         <p>
           <a href="mailto:gabriel.pso100@gmail.com" className="emailContact">
@@ -117,12 +122,15 @@ function Contact() {
           </div>
         </div>
         <div className="subject">
-          <input type="text" placeholder={contact[Language].subject} className="subject-input" name="subject"/>
+          <input type="text" placeholder={contact[Language].subject} className="subject-input" name="subject" />
         </div>
         <div className="message">
           <textarea type="text" placeholder={contact[Language].message} name="message" />
         </div>
-        <button>{contact[Language].send}</button>
+        <button  disabled={target}
+        className={target? 'disabled' : ''}>
+          {contact[Language].send}
+        </button>
       </form>
 
       <Modal
@@ -141,7 +149,7 @@ function Contact() {
           {result === "OK" ? (
             <div className={classes.paper}>
               <h2 id="transition-modal-title">
-                { contact[Language].contactSended.title}
+                {contact[Language].contactSended.title}
               </h2>
               <br />
               <hr />

@@ -4,6 +4,7 @@ import Project from '../project/project'
 import WhatsAppClone from '../../elements-Data/projects/WhatsAppClone'
 import SpotifyClone from '../../elements-Data/projects/spotifyClone'
 import Sign from '../../elements-Data/projects/sign'
+import Planner from '../../elements-Data/projects/planner'
 import portfolio from '../../elements-Data/portfolio/portfolio'
 
 import { LanguageContext } from '../../context/languageContext'
@@ -21,8 +22,9 @@ function Portfolio() {
             </div>
 
             <div className="projects">
-                <Project data={Sign} /> 
+                <Project data={Planner} />
                 <Project data={SpotifyClone} /> 
+                <Project data={Sign} /> 
                 <Project data={WhatsAppClone} />
             </div>
         </div>

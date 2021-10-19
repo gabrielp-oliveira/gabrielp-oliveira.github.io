@@ -151,7 +151,13 @@
 }
 .form > button:hover {
     background: rgba(255, 255, 255, 0.7);
-
+}
+.form > .disabled:hover {
+    background: rgba(255, 255, 255, 0.2)!important;
+}
+.disabled {
+    background: rgba(255, 255, 255, 0.2)!important;
+    cursor: auto!important;
 }
 .okButton {
     background: rgb(45, 76, 212)!important;
