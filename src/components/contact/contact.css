@@ -6,6 +6,7 @@
     color: white;
     position: relative;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 #contact > h2 {
     display: flex;

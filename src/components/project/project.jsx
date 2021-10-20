@@ -46,6 +46,11 @@ function Project({ data }) {
 window.addEventListener('resize',(e) => {
     if(e.target.innerWidth < 1000){
         setWidth(e.target.innerWidth-50)
+        if(e.target.innerWidth < 380){
+          img.current.style.opacity = 1
+        }else{
+          img.current.style.opacity = '0.3'
+        }
     }else{
         setWidth(950)
         console.log('?')
@@ -54,13 +59,21 @@ window.addEventListener('resize',(e) => {
 
   
   function projMouseEnter(e){
-    img.current.style.opacity = 1
-    projDesc.current.style.opacity = 0
+    if(window.screen.width > 380){
+      img.current.style.opacity = 1
+      projDesc.current.style.opacity = 0
+    }else{
+      img.current.style.opacity = 1
+    }
   }
   
   function projMouseLeave (e){
-    img.current.style.opacity = '0.3'
-    projDesc.current.style.opacity = 1
+    if(window.screen.width > 380){
+      img.current.style.opacity = '0.3'
+      projDesc.current.style.opacity = 1
+    }else{
+      img.current.style.opacity = 1
+    }
   }
   return (
     <div className="proj" onMouseEnter={e => projMouseEnter(e)} onMouseLeave={e => projMouseLeave(e)}>

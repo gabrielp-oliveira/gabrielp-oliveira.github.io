@@ -3,9 +3,7 @@
     border-radius: 10px;
     align-self: center;
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.4);
-    opacity: 0.3;
     transition: 200ms ease-in;
-    height: 420px;
 }
 .img:hover {
     opacity:1;
@@ -50,17 +48,23 @@
     color: rgb(231, 156, 156);
     font-weight: 600;
 }
-
+.black {
+    color: black;
+}
+.black > span {
+    font-style: italic;
+}
 .proj-Card{
     background: black;
     border-radius: 10px;
     max-height: 420px;
     position: relative;
-   
+    overflow: hidden;
+
 } 
 .proj-Card > div {
     position: absolute;
-    bottom: 50px;
+    bottom: 65px;
     padding: 5px;
 
 }
@@ -75,7 +79,4 @@
     position: absolute;
     bottom: 0;
     height: 60%
-}
-.projDesc > span {
-    font-size: 20px;
 }

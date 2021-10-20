@@ -117,7 +117,7 @@ footer {
  }
  ::-webkit-scrollbar-track{
   background: var(--Body);
-  border-radius: 12px;
+  /* border-radius: 12px; */
   box-shadow: inset 7px 10px 12px transparent;
  }
 
@@ -153,6 +153,14 @@ Regular 400 */
   }
   .projDesc {
     display: none;
+  }
+  .img {
+    opacity: 1;
+  }
+}
+@media (min-width: 381px) {
+  .img {
+    opacity: 0.3;
   }
 }
 @media (max-width: 550px) {
@@ -223,7 +231,9 @@ Regular 400 */
   
   .intro > h2 {
     font-size: 16px;
-
+  }
+  .projDesc > span{
+    font-size: 14px;
   }
  }
 
@@ -232,6 +242,9 @@ Regular 400 */
  
   .about > p {
     font-size: 25px;
+  }
+  .projDesc > span {
+    font-size: 17px;
   }
  }
 
@@ -251,12 +264,14 @@ Regular 400 */
 @media (max-width: 980px) { 
  .img {
    width: 100%;
+   height: auto;
  }
 }
 
 @media (min-width: 980px) { 
  .img {
    width: 900px;
+   height: 420px;
  }
 
 }
