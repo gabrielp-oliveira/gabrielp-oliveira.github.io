@@ -1,4 +1,4 @@
-#about-conteiner{
+#about{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,7 +73,7 @@
     flex-direction: row-reverse;
     left: 50px;
 }
-#about-conteiner > h2 {
+#about > h2 {
     font-family: 'Spartan', sans-serif;
     display: flex;
     align-items: center;

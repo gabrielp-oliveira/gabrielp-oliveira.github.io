@@ -33,7 +33,7 @@ export default function SwipeableTemporaryDrawer() {
             <div className="SideNav">
                 <span> <a></a></span>
                 <span> <a href="#Home">{navheader[Language].home}</a></span>
-                <span> <a href="#about-conteiner">{navheader[Language].about}</a></span>
+                <span> <a href="#about">{navheader[Language].about}</a></span>
                 <span> <a href="#portfolio">{navheader[Language].portfolio}</a></span>
                 <span> <a href="#contact">{navheader[Language].contact}</a> </span>
             </div>

@@ -64,7 +64,6 @@ function Contact() {
             process.env.REACT_APP_USER_ID,
             e.target, process.env.REACT_APP_ACESS_TOKEN)
             .then((result) => {
-              console.log(result)
               setResult(result.text)
               handleOpen()
             })
@@ -82,7 +81,6 @@ function Contact() {
           return
         });
     } else {
-      console.log("form invalido");
       setResult('Error')
       handleOpen()
     }

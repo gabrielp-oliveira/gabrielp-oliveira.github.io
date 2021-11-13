@@ -10,6 +10,7 @@ i {
     overflow: hidden;
     border: 2px solid #eee;
     box-shadow: 0 0 1px 1px #eee;
+    filter: blur(3px);
   }
   
   i:nth-child(1){

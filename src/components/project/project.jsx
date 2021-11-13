@@ -30,6 +30,7 @@ function Project({ data }) {
   };
 
   useEffect(() => {
+    setTec([])
     data.info.technologies.forEach(element => {
         setTec(oldArray => [...oldArray, <strong key={element}>{element} &nbsp;</strong>])
     });
@@ -39,7 +40,6 @@ function Project({ data }) {
     if(window.screen.width < 1000){
         setWidth(window.screen.width-50)
     }
-    console.log(width)
 }, [])
 
 
@@ -53,7 +53,6 @@ window.addEventListener('resize',(e) => {
         }
     }else{
         setWidth(950)
-        console.log('?')
     }
 })
 
@@ -104,7 +103,6 @@ window.addEventListener('resize',(e) => {
           <DialogContentText id="alert-dialog-description" >
             {data[Language].function}
           </DialogContentText>
-              <br />
           <DialogContentText id="alert-dialog-description" >
             {data[Language].features}
           </DialogContentText>

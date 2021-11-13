@@ -21,7 +21,7 @@ function About() {
 
   return (
     <>
-      <div id="about-conteiner">
+      <div id="about">
         {/* <h4>{about[Language].about_text}</h4> */}
         <h2 className="title">{about[Language].about}</h2>
         <div className="aboutBody">

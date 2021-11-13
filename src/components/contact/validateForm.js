@@ -4,28 +4,25 @@ function validateEmail(email) {
 }
 
 
-function checkEmailDomain(email){
-    return fetch(`https://mailcheck.p.rapidapi.com/?domain=${email}`, {
+async function checkEmailDomain(email){
+    const data = await fetch(`https://mailcheck.p.rapidapi.com/?domain=${email}`, {
         "method": "GET",
         "headers": {
             "x-rapidapi-key": process.env.REACT_APP_X_RAPID_API_KEY,
             "x-rapidapi-host": process.env.REACT_APP_X_RAPID_API_HOST
         }
-    })
-    .then(data => data.json())
-    .then(data => {
-        if(data.risk < 10 && data.valid){
-            return {
-                risk: data.risk,
-                text: 'OK',
-                reason: data.reason
-            }
-        }else{
-            // eslint-disable-next-line no-throw-literal
-            throw  {error: `${data.text}, ${data.reason}`}
-            }
-        }
-    )
+    });
+    const data_1 = await data.json();
+    if (data_1.risk < 10 && data_1.valid) {
+        return {
+            risk: data_1.risk,
+            text: 'OK',
+            reason: data_1.reason
+        };
+    } else {
+        // eslint-disable-next-line no-throw-literal
+        throw { error: `${data_1.text}, ${data_1.reason}` };
+    }
 }
 
 function validateForm(formulario) {
@@ -46,7 +43,6 @@ function validateForm(formulario) {
     const isNumeruc = !Number.isNaN(namevalid) || !Number.isNaN(emailvalid) || !Number.isNaN(subjectvalid)
 
     if(isNumeruc){
-        console.log('number')
         checkDomain.valid = false
         checkDomain.text = 'Error, Invalid filds.'
         return false

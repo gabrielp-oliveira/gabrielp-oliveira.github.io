@@ -51,9 +51,6 @@
 .black {
     color: black;
 }
-.black > span {
-    font-style: italic;
-}
 .proj-Card{
     background: black;
     border-radius: 10px;
