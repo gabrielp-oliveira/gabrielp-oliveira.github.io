@@ -3,7 +3,8 @@ import "./contact.css";
 import contact from "../../elements-Data/contact/contact";
 import emailjs from "emailjs-com";
 import { LanguageContext } from "../../context/languageContext";
-import { validateForm, checkEmailDomain } from "./validateForm";
+// import { validateForm, checkEmailDomain } from "./validateForm";
+import Formvalidation from "./validateForm";
 
 //----
 import { makeStyles } from "@material-ui/core/styles";
@@ -56,8 +57,8 @@ function Contact() {
     setTarget(true)
     e.preventDefault();
     const email = form.current.elements[1].value.trim();
-    if (validateForm(form)) {
-      checkEmailDomain(email)
+    if (Formvalidation.validateForm(form)) {
+      Formvalidation.checkEmailDomain(email)
         .then(() => {
           emailjs.sendForm(
             process.env.REACT_APP_EMAIL_ID,

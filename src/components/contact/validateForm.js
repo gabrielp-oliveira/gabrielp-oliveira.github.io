@@ -58,5 +58,5 @@ function validateForm(formulario) {
     
 
 }
-
-module.exports= {validateForm, checkEmailDomain}
+const Formvalidation = {validateForm: validateForm, checkEmailDomain: checkEmailDomain}
+export default  Formvalidation
