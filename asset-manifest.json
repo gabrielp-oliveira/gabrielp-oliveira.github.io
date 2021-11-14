@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.c8d67aa4.chunk.css",
-    "main.js": "/static/js/main.3cebe3a2.chunk.js",
-    "main.js.map": "/static/js/main.3cebe3a2.chunk.js.map",
+    "main.js": "/static/js/main.7ae35f53.chunk.js",
+    "main.js.map": "/static/js/main.7ae35f53.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2508e635.js",
     "runtime-main.js.map": "/static/js/runtime-main.2508e635.js.map",
     "static/js/2.99b31638.chunk.js": "/static/js/2.99b31638.chunk.js",
@@ -13,8 +13,8 @@
     "static/css/main.c8d67aa4.chunk.css.map": "/static/css/main.c8d67aa4.chunk.css.map",
     "static/js/2.99b31638.chunk.js.LICENSE.txt": "/static/js/2.99b31638.chunk.js.LICENSE.txt",
     "static/media/imagem.37be99e3.svg": "/static/media/imagem.37be99e3.svg",
-    "static/media/pdfEng.274edab8.pdf": "/static/media/pdfEng.274edab8.pdf",
-    "static/media/pdfPtBr.33b2056c.pdf": "/static/media/pdfPtBr.33b2056c.pdf",
+    "static/media/pdfEng.d436f3fd.pdf": "/static/media/pdfEng.d436f3fd.pdf",
+    "static/media/pdfPtBr.1dc590e1.pdf": "/static/media/pdfPtBr.1dc590e1.pdf",
     "static/media/plannerImg.1608857d.jpg": "/static/media/plannerImg.1608857d.jpg",
     "static/media/sign.b3567de4.jpg": "/static/media/sign.b3567de4.jpg",
     "static/media/spotifyClone.c9a51c7d.jpg": "/static/media/spotifyClone.c9a51c7d.jpg",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.2508e635.js",
     "static/js/2.99b31638.chunk.js",
     "static/css/main.c8d67aa4.chunk.css",
-    "static/js/main.3cebe3a2.chunk.js"
+    "static/js/main.7ae35f53.chunk.js"
   ]
 }
