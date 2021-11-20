@@ -1,9 +1,8 @@
 import React, { useState, useContext, useRef, useEffect } from "react";
 import "./contact.css";
 import contact from "../../elements-Data/contact/contact";
-import emailjs from "emailjs-com";
 import { LanguageContext } from "../../context/languageContext";
-// import { validateForm, checkEmailDomain } from "./validateForm";
+import api from '../../api/sendEmail'
 import Formvalidation from "./validateForm";
 
 //----
@@ -56,27 +55,24 @@ function Contact() {
   function sendEmail(e) {
     setTarget(true)
     e.preventDefault();
-    const email = form.current.elements[1].value.trim();
+    const name = form.current.elements[0].value.trim()
+    const email = form.current.elements[1].value.trim()
+    const subject = form.current.elements[2].value.trim()
+    const message = form.current.elements[3].value.trim()
     if (Formvalidation.validateForm(form)) {
-      Formvalidation.checkEmailDomain(email)
-        .then(() => {
-          emailjs.sendForm(
-            process.env.REACT_APP_EMAIL_ID,
-            process.env.REACT_APP_USER_ID,
-            e.target, process.env.REACT_APP_ACESS_TOKEN)
-            .then((result) => {
-              setResult(result.text)
-              handleOpen()
-            })
-            .catch((err) => {
-              console.log(err)
-              setResult(err.error)
-              handleOpen()
-              return
-            });
+        api.post('/', {
+          info: { name, email, subject, message, Language: Language }
+      })
+        .then((result) => {
+          if(result.data.error){
+            setResult(result.data.error)
+            handleOpen()
+          }else{
+            setResult(result.data.ok)
+            handleOpen()
+          }
         })
         .catch((err) => {
-          console.log(err)
           setResult(err.error)
           handleOpen()
           return
