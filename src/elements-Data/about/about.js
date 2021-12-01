@@ -1,5 +1,5 @@
-import pdfPt from '../../assets/pdf/pdfPtBr.pdf'
-import pdfEng from '../../assets/pdf/pdfEng.pdf'
+import pdfPt from '../../assets/pdf/GabrielOliveira.pdf'
+import pdfEng from '../../assets/pdf/Gabriel-Oliveira.pdf'
 // eslint-disable-next-line import/no-anonymous-default-export
 export default  {
     eng: {
