@@ -35,7 +35,7 @@ function Header() {
                     <h2>{home[Language]}</h2>
                     <div className="social">
                         <a href="https://github.com/gabrielp-oliveira" target="_blank"><span> <FontAwesomeIcon icon={faGithub} /></span></a>
-                        <a href="https://www.linkedin.com/in/gabriel-97-oliveira" target="_blank"><span> <FontAwesomeIcon icon={faLinkedin} /></span></a>
+                        <a href="https://www.linkedin.com/in/gabrielp-oliveira" target="_blank"><span> <FontAwesomeIcon icon={faLinkedin} /></span></a>
                     </div>
                     <Button variant="contained" style={{backgroundColor: 'rgba(0, 0, 0, 0.5)'}}>
                   <a href="#portfolio" style={{color: 'white', fontWeight: '600', textDecoration: 'none'}}>{navheader[Language].portfolio}</a>

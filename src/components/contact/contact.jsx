@@ -93,7 +93,7 @@ function Contact() {
         <span>{contact[Language].text}</span>
         <div className="social">
           <a href="https://github.com/gabrielp-oliveira" target="_blank" rel="noreferrer"><span> <FontAwesomeIcon icon={faGithub} /> </span></a>
-          <a href="https://www.linkedin.com/in/gabriel-97-oliveira" target="_blank" rel="noreferrer"><span><FontAwesomeIcon icon={faLinkedin} /> </span></a>
+          <a href="https://www.linkedin.com/in/gabrielp-oliveira" target="_blank" rel="noreferrer"><span><FontAwesomeIcon icon={faLinkedin} /> </span></a>
         </div>
         <p>
           <a href="mailto:gabriel.pso100@gmail.com" className="emailContact">
