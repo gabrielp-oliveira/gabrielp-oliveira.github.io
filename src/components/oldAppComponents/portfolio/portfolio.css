@@ -1,0 +1,53 @@
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    /* filter: opacity(0.9); */
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    }
+
+.title-port{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    width: 100%;
+    color: var(--Body);
+    filter: invert(1);
+}
+.title-port > p {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.title-port > h2 {
+    font-family: 'Spartan', sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+.title-port > p {
+    text-align: center;
+    
+  }
+
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}

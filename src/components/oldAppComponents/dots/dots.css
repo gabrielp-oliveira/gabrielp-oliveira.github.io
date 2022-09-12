@@ -1,0 +1,119 @@
+i {
+    display: block;
+    width: 2px;
+    height: 2px;
+    background: #eee;
+    border-radius: 100%;
+    position: absolute;
+    top: 110%;
+    opacity:0.2;
+    overflow: hidden;
+    border: 2px solid #eee;
+    box-shadow: 0 0 1px 1px #eee;
+    filter: blur(3px);
+  }
+  
+  i:nth-child(1){
+    animation: animatedBackgroundBottom 55s ease-in infinite;
+    right:20%;
+    width: 3px;
+    height: 3px;
+    -webkit-animation-delay: 1s;
+  }
+  i:nth-child(2){
+  
+  
+    animation: animatedBackgroundBottom 34s ease-in-out infinite;
+      right:50%;
+      width: 1px;
+      height: 1px;
+  }
+  
+  i:nth-child(3){
+  
+    animation: animatedBackgroundBottom 48.5s ease-out infinite;
+      right:10%;
+  }
+  i:nth-child(4){
+    animation: animatedBackgroundBottom 50.5s ease-in-out infinite;
+     right:80%;
+    -webkit-animation-delay: 5s;
+    width: 1px;
+    height: 1px;
+  }
+  
+  i:nth-child(5){
+    animation: animatedBackgroundBottom 26.2s ease-out infinite;
+     right:70%;
+     width: 4px;
+     height: 4px;
+    -webkit-animation-delay: 2s;
+  }
+  
+  i:nth-child(6){
+    animation: animatedBackgroundBottom 43s ease-in-out infinite;
+     right:44%;
+    
+  
+  }
+  i:nth-child(7){
+    animation: animatedBackgroundBottom 28s ease-in-out infinite;
+     right:15%;
+     width: 4px;
+     height: 4px;
+    -webkit-animation-delay: 3s;
+  }
+  i:nth-child(8){
+    animation: animatedBackgroundBottom 32s ease-in-out infinite;
+     right:64%;
+    -webkit-animation-delay: 5s;
+  }
+  
+  
+  
+  
+  @keyframes animatedBackgroundBottom {
+      from { top: 100%; }
+      to { top: -30%; }
+  }
+  
+
+  i:nth-child(9){
+    animation: animatedBackgroundTop 48.5s ease-in-out infinite;
+     right:12%;
+     width: 1px;
+     height: 1px;
+    -webkit-animation-delay: 1s;
+  }
+  
+  i:nth-child(10){
+    animation: animatedBackgroundTop 35.2s ease-out infinite;
+     right:48%;
+     width: 8px;
+     height: 8px;
+    -webkit-animation-delay: 5s;
+  }
+  
+  i:nth-child(11){
+    animation: animatedBackgroundTop 40s ease-in infinite;
+     right:6%;
+    
+  
+  }
+  i:nth-child(12){
+    animation: animatedBackgroundTop 30s ease-in-out infinite;
+     right:92%;
+    -webkit-animation-delay: 3s;
+  }
+  i:nth-child(13){
+    animation: animatedBackgroundTop 48s ease-in-out infinite;
+     right:59%;
+    -webkit-animation-delay: 8s;
+    width: 5px;
+    height: 5px;
+  }
+    
+  @keyframes animatedBackgroundTop {
+    from { top: -5%; }
+    to { top: 100%; }
+}

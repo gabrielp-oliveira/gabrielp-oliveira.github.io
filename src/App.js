@@ -1,25 +1,26 @@
-import Home from './components/home/Home'
-import './App.css';
-import About from './components/about/about'
-import Portfolio from './components/portfolio/portfolio'
-import Contact from './components/contact/contact'
-import Footer from './components/footer/Footer'
+import React, { useEffect, useState, useContext } from "react";
 
+import OldApp from "./OldApp";
+import NewApp from "./NewApp";
+import { VersionContext } from "./context/VersionContext";
 function App() {
-  return (
-    <div className="App">
-      <Home></Home>
-      <main>
+  const [appVersion, setAppversion] = useState();
+  const [status, setstatus] = useState(false);
+  const { Version } = useContext(VersionContext)
+  const newApp = <NewApp></NewApp>
+  const oldApp = <OldApp></OldApp>
+  useEffect(() => {
+    if (Version == 'old') {
+      setAppversion(oldApp);
+    } else {
+      setAppversion(newApp);
+    }
+  }, [Version]);
 
-        <div className="body-conteiner">
-          <About></About>
-          <Portfolio></Portfolio>
-          <Contact />
-        </div>
-      </main>
-      <Footer />  
-    </div>
-  );
+
+  return <>
+    {appVersion}
+  </>;
 }
 
 export default App;

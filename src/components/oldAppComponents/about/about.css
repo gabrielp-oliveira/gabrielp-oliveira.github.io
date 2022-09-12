@@ -1,0 +1,121 @@
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: var(--Dark); */
+    padding-top: 20px;
+    position: relative;
+    margin-top: 20px;
+}
+.about {
+    /* text-shadow: 1px 1px 1px rgb(80, 80, 80); */
+    border-radius: 10px ;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* font-family: 'Roboto Slab', serif; */
+    /* font-family: 'Roboto Mono', monospace; */
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'PT Sans', sans-serif; */
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: justify;
+    font-weight: 500;
+    align-self: center;
+    max-width: 700px;
+}
+.about > p {
+    color: var(--Body);
+    filter: invert(1);
+    display: flex;
+    flex-direction: column;
+}
+.resume {
+    width: 120px;
+    border-radius: 5px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    transition: ease-in 250ms;
+    margin: 0px 10px 10px 10px;
+}
+.resume a {
+    color: white;
+    text-decoration: none;
+}
+.resume > button {
+    cursor: pointer;
+}
+.resume::before {
+    content: '<button>';
+    font-family: 'La Belle Aurore',cursive;
+    color: var(--Body);
+    filter: invert(0.6);
+    font-size: 18px;
+    position: relative;
+    right: 15px;
+    font-weight: 100;
+    bottom: 10px;
+
+} 
+.resume::after{
+    content: '</button>';
+    font-family: 'La Belle Aurore',cursive;
+    color: var(--Body);
+    filter: invert(0.6);
+    font-size: 18px;
+    position: relative;
+    top: 10px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: row-reverse;
+    left: 50px;
+}
+#about > h2 {
+    font-family: 'Spartan', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--Body);
+    filter: invert(0.9);
+}
+
+.aboutBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px 10px 20px 10px;
+    flex-wrap: wrap;
+}
+.aboutBody > div > img {
+    border-radius: 15px;
+    height: 300px;
+}
+.knowledge {
+    color: var(--Body);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    filter: invert(1);
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+.knowledge > span {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--Body);
+    padding: 8px;
+    border-radius: 8px;
+    width: 100px;
+
+}
+.knowledge >  span > svg {
+    font-size: 55px;
+}

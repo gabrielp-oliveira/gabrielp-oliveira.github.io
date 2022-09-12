@@ -1,0 +1,79 @@
+.img{
+    max-width: 1000px;
+    border-radius: 10px;
+    align-self: center;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.4);
+    transition: 200ms ease-in;
+}
+.img:hover {
+    opacity:1;
+}
+.img > h3 {
+    color: white;
+    margin: 10px;
+}
+.proj{
+    display: flex;
+    color: white;
+    position: relative;
+    margin: 20px;
+}
+
+.proj-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    cursor: pointer;
+}
+.proj-info > h3{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.proj-info > div > p {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    color: rgb(218, 218, 218);
+    font-size: 14px;
+    padding: 5px;
+}
+
+
+.features > li {
+    color: rgb(241, 241, 241);
+    font-size: 14px;
+}
+.target{
+    color: rgb(231, 156, 156);
+    font-weight: 600;
+}
+.black {
+    color: black;
+}
+.proj-Card{
+    background: black;
+    border-radius: 10px;
+    max-height: 420px;
+    position: relative;
+    overflow: hidden;
+
+} 
+.proj-Card > div {
+    position: absolute;
+    bottom: 65px;
+    padding: 5px;
+
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+.projDesc {
+    transition: 200ms ease-in;
+    position: absolute;
+    bottom: 0;
+    height: 60%
+}

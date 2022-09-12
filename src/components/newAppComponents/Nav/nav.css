@@ -1,0 +1,39 @@
+.newNav {
+    z-index: 44;
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    height: 77%;
+    width: 70px;
+    
+}
+.newNav .config {
+    border-radius: 5px;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.newNav .navBar {
+    font-size: 20px;
+    display: flex;
+    /* background-color: blue; */
+    padding: 15px 5px;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.newNav .navBar {
+    z-index: 5;
+    position: absolute;
+}
+.newNav .navBar a {
+    color: white;
+    text-decoration: none;
+    
+}
