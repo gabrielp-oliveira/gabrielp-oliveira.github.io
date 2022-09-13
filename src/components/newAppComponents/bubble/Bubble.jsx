@@ -5,8 +5,7 @@ function Bubble({ status, slow }) {
     return (
         <>
 
-            {status ? <>
-                {slow ? <div className='bubbleContainer'>
+                {slow ? <div className='bubbleContainer' >
                     <div className="bubble small-slow"></div>
                     <div className="bubble s-medium-slow"></div>
                     <div className="bubble medium-slow"></div>
@@ -19,7 +18,6 @@ function Bubble({ status, slow }) {
                     <div className="bubble small-l"></div></div>}
 
 
-            </> : <></>}
 
         </>
     )

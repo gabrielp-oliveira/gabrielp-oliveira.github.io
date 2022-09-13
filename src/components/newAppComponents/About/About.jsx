@@ -1,5 +1,6 @@
 import React from 'react'
 import Bubble from '../bubble/Bubble'
+import Ship from '../../../assets/ship'
 import './about.css'
 
 function About() {
@@ -11,9 +12,9 @@ function About() {
         </p>
         <p>sSOMETHING SOMETHING SOMETHING</p>
         <div >
-        <Bubble status={true} slow={false}/>
-        <Bubble status={true} slow={true}/>
 
+        {/* <Bubble slow={true} /> */}
+        {/* <Bubble slow={false} /> */}
         </div>
 
     </div>

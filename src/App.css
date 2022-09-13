@@ -33,6 +33,7 @@ main {
   background: var(--Body);
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   /* background-color: red; */
 }
@@ -100,6 +101,7 @@ main {
 
 footer {
   width: 100%;
+  /* position: relative; */
   height: 150px;  
 }
 
