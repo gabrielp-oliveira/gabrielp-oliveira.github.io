@@ -9,11 +9,11 @@ function NewApp() {
     <div className='app'>
       {/* <ParallaxProvider> */}
 
-        {/* <Home /> */}
+        <Home />
       <main>
         {/* <Parallax speed={10}> */}
           <About></About>
-          <Footer></Footer>
+          {/* <Footer></Footer> */}
         {/* </Parallax> */}
       </main>
       {/* </ParallaxProvider> */}

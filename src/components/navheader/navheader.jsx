@@ -9,14 +9,15 @@ import { faLightbulb, faLanguage } from '@fortawesome/free-solid-svg-icons'
 import SideMenu from './sideMenu.jsx'
 
 
-function NavHeader() {
+function NavHeader({homePage}) {
     const { Language, SetLanguage } = useContext(LanguageContext)
     const [ outPutLanguage, SetOutPutLanguage ] = useState()
 
     const [Adjust, SetAdjust] = useState('Light')
 
     useEffect(() => {
-
+        console.log(homePage)
+        console.log('homePage')
         if (navigator.language === 'pt') {
             SetLanguage('pt')
             SetOutPutLanguage('eng')
@@ -29,7 +30,7 @@ function NavHeader() {
 
 
     function adjustLight() {
-        const home = document.querySelector('#Home')
+        const home = document.querySelector('#home')
         const root = document.documentElement
         const astro = document.querySelector('.astro')
         const icon = document.querySelector('.adjustIcon')
@@ -123,7 +124,7 @@ function NavHeader() {
 
         <div className="navHeader">
             <div className="navBar">
-                <span> <a href="#Home">{navheader[Language].home}</a></span>
+                <span> <a href="#home">{navheader[Language].home}</a></span>
                 <span> <a href="#about">{navheader[Language].about}</a></span>
                 <span> <a href="#portfolio">{navheader[Language].portfolio}</a></span>
                 <span> <a href="#contact">{navheader[Language].contact}</a> </span>

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef } from 'react'
 import './home.css'
 import home from '../../../elements-Data/home/home'
 import navheader from '../../../elements-Data/navheader/navheader'
@@ -17,14 +17,14 @@ import { LanguageContext } from '../../../context/languageContext'
 function Header() {
 
     const { Language } = useContext(LanguageContext)
-
+    const homepage = useRef(null)
 
 
     return (
         <>
-        <div id="Home">
+        <div id="Home" ref={homepage} className='home'>
 
-            <NavHeader></NavHeader>
+            <NavHeader home={homepage}></NavHeader>
 
             <div className="Home-Content">
 

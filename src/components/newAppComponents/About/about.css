@@ -1,3 +1,40 @@
 #About {
-    height: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.05);
+    border-radius: 30px;
+    padding-top: 30px;
+}
+#About > div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
+
+.About-Left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-top: 20px;
+}
+.About-Left svg {
+    font-size: 25px;
+}
+.About-Left > h2 {
+    align-self: center;
+    margin-bottom: 20px;
+}
+.About-Left > div {
+    display: flex;
+    justify-content: space-around;
+}
+.About-right {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-top: 20px;
+    margin-left: 5px;
+    padding-left: 5px;
 }

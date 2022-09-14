@@ -54,11 +54,11 @@ function Nav() {
                     {/* <span> <a href="#Home">{navheader[Language].home}</a></span> */}
                     <span> <a href="#Home"><FontAwesomeIcon icon={faHome} /></a></span>
                     {/* <span> <a href="#about">{navheader[Language].about}</a></span> */}
-                    <span> <a href="#Home"><FontAwesomeIcon icon={faUserAlt} /></a></span>
+                    <span> <a href="#About"><FontAwesomeIcon icon={faUserAlt} /></a></span>
                     {/* <span> <a href="#portfolio">{navheader[Language].portfolio}</a></span> */}
-                    <span> <a href="#Home"><FontAwesomeIcon icon={faNewspaper} /></a></span>
+                    <span> <a href="#"><FontAwesomeIcon icon={faNewspaper} /></a></span>
                     {/* <span> <a href="#contact">{navheader[Language].contact}</a> </span> */}
-                    <span> <a href="#Home"><FontAwesomeIcon icon={faPaperPlane} /></a></span>
+                    <span> <a href="#"><FontAwesomeIcon icon={faPaperPlane} /></a></span>
 
                     <div className="config" >
 

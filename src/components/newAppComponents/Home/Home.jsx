@@ -17,7 +17,7 @@ function Home({name}) {
 
 
   return (
-      <div id="NewHome">
+      <div id="Home">
         <Nav></Nav>
         <div className="Home-Content">
 

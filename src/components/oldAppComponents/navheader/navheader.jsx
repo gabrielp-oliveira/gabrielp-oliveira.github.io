@@ -33,7 +33,7 @@ function NavHeader() {
 
 
     function adjustLight() {
-        const home = document.querySelector('#Home')
+        const home = document.querySelector('#home')
         const root = document.documentElement
         const astro = document.querySelector('.astro')
         const icon = document.querySelector('.adjustIcon')
@@ -50,7 +50,7 @@ function NavHeader() {
             astro.style.backgroundColor = 'rgb(243, 175, 148)'
 
             root.style.cssText = "--Body: rgb(255, 255, 255)";
-            home.style.background = "linear-gradient(135deg, rgba(238,174,212,1) 0%, rgba(116,116,221,1) 100%)";
+            // home.style.background = "linear-gradient(135deg, rgba(238,174,212,1) 0%, rgba(116,116,221,1) 100%)";
             icon.style.filter = 'none'
             form.style.background = 'rgb(0, 0, 0, 0.2)'
             bodyConteiner.style.background = 'rgb(0, 0, 0, 0.2)'
@@ -72,7 +72,7 @@ function NavHeader() {
             astro.style.width = '16.5rem'
             astro.style.backgroundColor = 'rgb(240,240,240)'
             root.style.cssText = "--Dark: rgb(5, 0, 32)";
-            home.style.background = "linear-gradient(190deg, rgb(52, 11, 68) -20%, rgb(2, 53, 63) 100%)";
+            // home.style.background = "linear-gradient(190deg, rgb(52, 11, 68) -20%, rgb(2, 53, 63) 100%)";
             icon.style.filter = 'invert()'
             form.style.background = 'rgb(255, 255, 255, 0.1)'
             bodyConteiner.style.background = 'rgb(255, 255, 255, 0.02)'
@@ -130,7 +130,7 @@ function NavHeader() {
 
         <div className="navHeader">
             <div className="navBar">
-                <span> <a href="#Home">{navheader[Language].home}</a></span>
+                {/* <span> <a href="#Home">{navheader[Language].home}</a></span> */}
                 <span> <a href="#about">{navheader[Language].about}</a></span>
                 <span> <a href="#portfolio">{navheader[Language].portfolio}</a></span>
                 <span> <a href="#contact">{navheader[Language].contact}</a> </span>

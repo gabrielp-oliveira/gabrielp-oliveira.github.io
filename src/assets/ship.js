@@ -3,7 +3,7 @@ import React from 'react'
 function Ship({color, width, height}) {
   return (
     <>
-    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" height={height} width={width} className="ship"
+    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" height={height} width={width}
      viewBox="0 0 1280.000000 953.000000"
      preserveAspectRatio="xMidYMid meet">
     <metadata>

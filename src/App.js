@@ -7,19 +7,12 @@ function App() {
   const [appVersion, setAppversion] = useState();
   const [status, setstatus] = useState(false);
   const { Version } = useContext(VersionContext)
-  const newApp = <NewApp></NewApp>
-  const oldApp = <OldApp></OldApp>
-  useEffect(() => {
-    if (Version == 'old') {
-      setAppversion(oldApp);
-    } else {
-      setAppversion(newApp);
-    }
-  }, [Version]);
-
+ 
 
   return <>
-    {appVersion}
+  {/* {(Version == 'old')? <OldApp/> : <NewApp/>} */}
+  {/* <NewApp/> */}
+  <OldApp/>
   </>;
 }
 
