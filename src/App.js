@@ -10,9 +10,9 @@ function App() {
  
 
   return <>
-  {/* {(Version == 'old')? <OldApp/> : <NewApp/>} */}
-  {/* <NewApp/> */}
-  <OldApp/>
+  {(Version == 'old')? <OldApp/> : <NewApp/>}
+  {/* <NewApp/>
+  <OldApp/> */}
   </>;
 }
 

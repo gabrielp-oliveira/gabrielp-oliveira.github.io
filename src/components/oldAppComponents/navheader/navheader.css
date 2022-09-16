@@ -24,13 +24,13 @@
     justify-content: center;
 
 }
-.navHeader-Container .navBar{
+.navBar{
     height: 100%;
     display: flex;
     justify-content: center;
     margin-left: 20px;
 }
-.navHeader-Container .navBar >span {
+.navBar >span {
     padding: 20px;
     margin: 0px 3px;
     height: 100%;
@@ -40,20 +40,20 @@
     padding: 20px 5px;
     cursor: pointer;
 }
-.navHeader-Container .navBar >span > a {
+.navBar >span > a {
     color: white;
     text-decoration: none;
 }
 
 
 
-.navHeader-Container .navBar >span > a:hover{
+.navBar >span > a:hover{
     color: rgb(13, 140, 214);
     text-decoration: underline;
 
 }
 
-.navHeader-Container .adjustIcon {
+.adjustIcon {
     filter: none;
     /* border: 1px solid rgb(28, 3, 255); */
     border-radius: 4px;
@@ -73,7 +73,7 @@
 }   
 
 
-.navHeader-Container .config{
+.config{
     display: flex;
     align-self: center;
     margin: 15px;
@@ -84,13 +84,13 @@
     justify-content: space-between;
     align-items: center;
 }
-.navHeader-Container .config > div {
+.config > div {
     margin: 0px 20px;
     cursor: pointer;
 }
 
 
-.navHeader-Container .language {
+.language {
     width: 30px;
     display: flex;
     flex-direction: column;
@@ -100,15 +100,15 @@
     user-select: none; /* Standard */
     color: white;
 }
-.navHeader-Container .language > svg {
+.language > svg {
     font-size: 30px;
 }
 
-.navHeader-Container .MuiMenu-list >  a {
+.MuiMenu-list >  a {
     text-decoration: none;
     color: black;
 }
 
-.navHeader-Container .MuiMenu-list >  a:hover{
+.MuiMenu-list >  a:hover{
     text-decoration: underline;
 }

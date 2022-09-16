@@ -12,8 +12,8 @@ function NewApp() {
         <Home />
       <main>
         {/* <Parallax speed={10}> */}
-          <About></About>
-          {/* <Footer></Footer> */}
+          {/* <About></About> */}
+          <Footer></Footer>
         {/* </Parallax> */}
       </main>
       {/* </ParallaxProvider> */}

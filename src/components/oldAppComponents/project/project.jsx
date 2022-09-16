@@ -11,11 +11,14 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faDesktop, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 import { LanguageContext } from "../../../context/languageContext";
+import {  VersionContext} from "../../../context/VersionContext";
 
 function Project({ data }) {
   const { Language } = useContext(LanguageContext);
+  const { Version } = useContext(VersionContext);
   const [open, setOpen] = useState(false);
   const [tec, setTec] = useState([]);
+  const [width, setWidth] = useState(1000)
 
   const projDesc = useRef();
   const img = useRef();
@@ -29,23 +32,38 @@ function Project({ data }) {
   };
 
   useEffect(() => {
+    if(Version){
+
     setTec([])
     data.info.technologies.forEach(element => {
         setTec(oldArray => [...oldArray, <strong key={element}>{element} &nbsp;</strong>])
     });
+  }
   }, [data.info.technologies])
 
-
+  useEffect(() => {
+    if(Version){
+    if(window.screen.width < 1000){
+        setWidth(window.screen.width-50)
+    }
+  }
+}, [])
 
 
 window.addEventListener('resize',(e) => {
+  if(Version){
+    
     if(e.target.innerWidth < 1000){
-        if(e.target.innerWidth < 380){
-          img.current.style.opacity = 1
-        }else{
-          img.current.style.opacity = '0.3'
-        }
+      setWidth(e.target.innerWidth-50)
+      if(e.target.innerWidth < 380){
+        img.current.style.opacity = 1
+      }else{
+        img.current.style.opacity = '0.3'
+      }
+    }else{
+      setWidth(950)
     }
+  }
 })
 
   

@@ -1,5 +1,5 @@
 import React, {  useContext } from 'react'
-import './home.css'
+import homeStyle from './home.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { Button } from "@material-ui/core";
@@ -17,16 +17,16 @@ function Home({name}) {
 
 
   return (
-      <div id="Home">
+      <div id={homeStyle.Home}>
         <Nav></Nav>
-        <div className="Home-Content">
+        <div className={homeStyle.HomeContent}>
 
 
-          <div className='newIntro'>
+          <div className={homeStyle.newIntro}>
             <div>
               <h1>Gabriel Oliveira</h1>
               <h2>{home[Language]}</h2>
-              <div className="social">
+              <div className={homeStyle.social}>
                 <a href="https://github.com/gabrielp-oliveira" target="_blank" rel="noreferrer" ><span> <FontAwesomeIcon icon={faGithub} /></span></a>
                 <a href="https://www.linkedin.com/in/gabrielp-oliveira" target="_blank" rel="noreferrer" ><span> <FontAwesomeIcon icon={faLinkedin} /></span></a>
               </div>
@@ -36,12 +36,12 @@ function Home({name}) {
 
             </div>
 
-            <Drip id="dripHome" />
 
+            <Drip id="dripHome" />
           </div>
 
         </div>
-        <div className='background'>
+        <div className=''>
           <Sky />
           <DarkWaves />
 

@@ -1,4 +1,4 @@
-import React, { useState, useContext, useRef } from "react";
+import React, { useState, useContext, useRef, useEffect } from "react";
 import "./contact.css";
 import contact from "../../../elements-Data/contact/contact";
 import { LanguageContext } from "../../../context/languageContext";
@@ -15,7 +15,7 @@ import { Button } from '@material-ui/core';
 //-----
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faEnvelope, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faCodepen, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 
 const useStyles = makeStyles((theme) => ({
