@@ -1,24 +1,22 @@
-import React from 'react'
-import Home from './components/newAppComponents/Home/Home'
-import About from './components/newAppComponents/About/About'
-import { ParallaxProvider, Parallax } from 'react-scroll-parallax'
-import Footer from './components/newAppComponents/footer/footer'
+import React from "react";
+import Home from "./components/newAppComponents/Home/Home";
+import About from "./components/newAppComponents/About/About";
+import Footer from "./components/newAppComponents/footer/footer";
+import Ship from "./assets/ship";
+import Contact from './components/newAppComponents/contact/contact'
 function NewApp() {
   return (
-
-    <div className='app'>
-      {/* <ParallaxProvider> */}
-
+    <div className="app">
         <Home />
-      <main>
-        {/* <Parallax speed={10}> */}
-          {/* <About></About> */}
-          <Footer></Footer>
-        {/* </Parallax> */}
-      </main>
-      {/* </ParallaxProvider> */}
-      </div>
-  )
+        <main className="newMain">
+          <About></About>
+
+          <Ship color="white" height="150px" width="150px" />
+          <Contact></Contact>
+        </main>
+        <Footer></Footer>
+    </div>
+  );
 }
 
-export default NewApp
+export default NewApp;

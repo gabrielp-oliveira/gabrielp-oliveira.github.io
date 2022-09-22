@@ -9,12 +9,15 @@
   box-sizing: border-box; 
 }
 
-html, body, #root, .app {
+html, body, .app {
   height: 100%;
 }
 
 html {
   scroll-behavior: smooth;
+}
+#root {
+  background-color: black;
 }
 
 .App {
@@ -24,8 +27,11 @@ html {
   background: var(--Body);
   max-width: 100vw;
 }
+.app > .newMain {
+  padding: 30px;
+}
 
-main {
+.main {
   max-width: 100%;
   margin: 0 auto;
   padding: 50px 10%;
@@ -253,13 +259,13 @@ Regular 400 */
 
 
  @media (max-width: 1400px) { 
-  main {
+  .main {
     padding: 50px 2%;
   }
 }
 
 @media (min-width: 1401px) { 
-  main {
+  .main {
     padding: 50px 10%;
     width: 100%;
   }

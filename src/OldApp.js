@@ -9,7 +9,7 @@ function OldApp() {
   return (
     <div className="App">
       <Home></Home>
-      <main>
+      <main className='main'>
 
         <div className="body-conteiner">
           <About></About>
