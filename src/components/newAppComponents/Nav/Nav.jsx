@@ -1,36 +1,38 @@
-import React, { useRef, useContext, useState, useEffect } from 'react'
-import navStyle from './nav.module.css'
-import Drip from '../Home/Drip'
-import navheader from '../../../elements-Data/navheader/navheader';
-import { LanguageContext } from '../../../context/languageContext';
-import { VersionContext } from '../../../context/VersionContext';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLightbulb, faLanguage, faAddressCard, faHome, faUserAlt, faNewspaper, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
-import Box from '@material-ui/core/Box';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormControl from '@material-ui/core/FormControl';
-import Select, { SelectChangeEvent } from '@material-ui/core/Select';
+import React, { useState, useEffect, useContext } from 'react'
+import navStyler from './nav.module.css'
+import navheader from '../../../elements-Data/navheader/navheader'
+import { LanguageContext } from '../../../context/languageContext'
+import { VersionContext } from '../../../context/VersionContext'
 
-function Nav() {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLanguage, faAnchor } from '@fortawesome/free-solid-svg-icons'
+import Mountains from '../../../assets/mountains'
+// import SideMenu from './sideMenu.jsx'
+
+
+function NavHeader() {
     const { Language, SetLanguage } = useContext(LanguageContext)
     const { Version, SetVersion } = useContext(VersionContext)
-    const [outPutLanguage, SetOutPutLanguage] = useState()
-    useEffect(() => {
+    const [ outPutLanguage, SetOutPutLanguage ] = useState()
 
-        if (navigator.language === 'pt') {
-            SetLanguage('pt')
-            SetOutPutLanguage('eng')
-        } else {
-            SetLanguage('eng')
-            SetOutPutLanguage('pt/br')
+    const [Adjust, SetAdjust] = useState('Light')
+
+    useEffect(() => {
+        if(Version == 'old'){
+            
+            if (navigator.language === 'pt') {
+                SetLanguage('pt')
+                SetOutPutLanguage('eng')
+            } else {
+                SetLanguage('eng')
+                SetOutPutLanguage('pt/br')
+            }
+            // adjustLight()
         }
-        adjustLight()
     }, [])
 
-    function adjustLight() {
 
-    }
+
     function changelanguage() {
 
         if (Language === 'pt') {
@@ -41,66 +43,41 @@ function Nav() {
             SetOutPutLanguage('eng')
         }
     }
-    function changeVersion(a) {
-
-        console.log(Version)
-        SetVersion(Version === 'new' ? 'old' : 'new')
+    function changeVersion(){
+        SetVersion(Version === 'new' ? 'old': 'new')
     }
+
+
     return (
-        <div>
+        <div className={navStyler.navHeader_Container}>
 
-            <div className={navStyle.newNav}>
-                <div className={navStyle.navBar}>
-                    {/* <span> <a href="#Home">{navheader[Language].home}</a></span> */}
-                    <span> <a href="#Home"><FontAwesomeIcon icon={faHome} /></a></span>
-                    {/* <span> <a href="#about">{navheader[Language].about}</a></span> */}
-                    <span> <a href="#About"><FontAwesomeIcon icon={faUserAlt} /></a></span>
-                    {/* <span> <a href="#portfolio">{navheader[Language].portfolio}</a></span> */}
-                    {/* <span> <a href="#"><FontAwesomeIcon icon={faNewspaper} /></a></span> */}
-                    {/* <span> <a href="#contact">{navheader[Language].contact}</a> </span> */}
-                    <span> <a href="#"><FontAwesomeIcon icon={faPaperPlane} /></a></span>
-
-                    <div className={navStyle.config} >
-
-
-                        {/* <div className="language" >
-                            <div className="language" onClick={(e) => changelanguage(e)}>
-                                <FontAwesomeIcon icon={faLanguage} />
-                            </div>
-                            <span>{outPutLanguage}</span>
-                        </div> */}
-
-                        <FormControl fullWidth>
-                            <InputLabel id="" style={{color: 'white'}}>{Language}</InputLabel>
-                            <Select
-                                labelId=""
-                                id="demo-simple-select"
-                                value={outPutLanguage}
-                                label="Age"
-                                onChange={(e) => changelanguage(e)} style={{color: 'white'}} >
-                                <MenuItem value={'pt-br'}>Pt-Br</MenuItem>
-                                <MenuItem value={'eng'}>Eng</MenuItem>
-                            </Select>
-                        </FormControl>
-
-                        {/* <div className={navStyle.adjustIcon} >
-                            <div className={navStyle.adjustIcon} onClick={e => adjustLight(e)} draggable="false">
-                                <FontAwesomeIcon icon={faLightbulb} />
-                            </div>
-                        </div> */}
-                        <div className={navStyle.adjustIcon} >
-                            <div className={navStyle.adjustIcon} onClick={e => changeVersion()} draggable="false">
-                                <FontAwesomeIcon icon={faAddressCard} />
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                {/* <SideMenu /> */}
-                <Drip id={'navDrip'}></Drip>
+        <div className={navStyler.navHeader}>
+            <div className={navStyler.navBar}>
+                <span> <a href="#Home">{navheader[Language].home}</a></span>
+                <span> <a href="#about">{navheader[Language].about}</a></span>
+                <span> <a href="#portfolio">{navheader[Language].portfolio}</a></span>
+                <span> <a href="#contact">{navheader[Language].contact}</a> </span>
             </div>
+            {/* <SideMenu/> */}
+
+            <div className={navStyler.config} >
+
+
+                <div className={navStyler.language} onClick={() => changelanguage()}>
+                    <FontAwesomeIcon icon={faLanguage} />
+                    <span>{outPutLanguage}</span>
+                </div>
+
+                <div className={navStyler.adjustIcon} onClick={e => changeVersion(e)} draggable="false">
+                    {/* <FontAwesomeIcon icon={faAnchor} /> */}
+                    <Mountains />
+                </div>
+
+            </div>
+        </div> 
+
         </div>
     )
 }
 
-export default Nav
+export default NavHeader

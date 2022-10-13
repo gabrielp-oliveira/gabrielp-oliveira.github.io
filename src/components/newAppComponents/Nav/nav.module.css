@@ -1,39 +1,114 @@
-.newNav {
-    z-index: 44;
+.navHeader{
+    width: 100%;
+    max-width: 2300px;
+    height: 60px;
+    position: relative;
+
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.navHeader_Container {
+    z-index: 10;
+    padding: 0px 10%;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
     position: fixed;
-    top: 5px;
-    left: 10px;
-    height: 77%;
-    width: 70px;
-    
-}
-.newNav .config {
-    border-radius: 5px;
-    height: 30%;
-    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    /* flex-direction: row; */
+    justify-content: center;
+
 }
-.newNav .navBar {
-    font-size: 20px;
-    display: flex;
-    /* background-color: blue; */
-    padding: 15px 5px;
+.navBar{
     height: 100%;
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
 }
-.newNav .navBar {
-    z-index: 5;
-    position: absolute;
+.navBar >span {
+    padding: 20px;
+    margin: 0px 3px;
+    height: 100%;
+    font-size: 18px;
+    transition: ease-in 200ms;
+    align-self: flex-end;
+    padding: 20px 5px;
+    cursor: pointer;
 }
-.newNav .navBar a {
+.navBar >span > a {
     color: white;
     text-decoration: none;
+}
+
+
+
+.navBar >span > a:hover{
+    color: rgb(13, 140, 214);
+    text-decoration: underline;
+
+}
+
+.adjustIcon {
+    filter: none;
+    /* border: 1px solid rgb(28, 3, 255); */
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    /* padding: 5px; */
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
     
+}   
+
+
+.config{
+    display: flex;
+    align-self: center;
+    margin: 15px;
+    color: white;
+    /* border: 1px solid black; */
+    /* width: 150px; */
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.config > div {
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+
+.language {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    color: white;
+}
+.language > svg {
+    font-size: 30px;
+}
+
+.MuiMenu-list >  a {
+    text-decoration: none;
+    color: black;
+}
+
+.MuiMenu-list >  a:hover{
+    text-decoration: underline;
 }

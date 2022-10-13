@@ -42,6 +42,7 @@ function About() {
             <br></br>
             {about[Language].about_sub_text}</p>
             <span>
+              <br/>
               <a target="blank" href={about[Language].resume}>
                 <Button variant="contained" color="secondary">
                 <FontAwesomeIcon icon={faScroll} />

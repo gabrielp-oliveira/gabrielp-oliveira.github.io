@@ -5,12 +5,12 @@
     flex-direction: column;
     position: relative;
     justify-content: space-between;
+    min-height: 560px;
     position: relative;
     justify-items: center;
     background-color: black;
     overflow: hidden;
 }
-
 .HomeContent{
     display: flex;
     flex-direction: column;

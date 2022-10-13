@@ -19,6 +19,7 @@ function Home({name}) {
   return (
       <div id={homeStyle.Home}>
         <Nav></Nav>
+        <div></div>
         <div className={homeStyle.HomeContent}>
 
 
@@ -41,7 +42,7 @@ function Home({name}) {
           </div>
 
         </div>
-        <div className=''>
+        <div >
           <Sky />
           <DarkWaves />
 
