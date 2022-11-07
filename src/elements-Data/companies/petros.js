@@ -2,7 +2,7 @@ import React from "react";
 import img from "../../assets/imgs/petros.png";
 import companyStyle from "./companyStyle.module.css";
 
-function Details() {
+function DetailsEng() {
   return (
     <>
       client:
@@ -20,19 +20,34 @@ function Details() {
     </>
   );
 }
+function DetailsPtBr() {
+  return (
+    <>
+      cliente:
+      <div className={companyStyle.container}>
+        <div>
+          <p>• suporte no desenvolvimento e manutenção de projetos da equipe web sistemas full-stack existentes.</p>
+          <p>• suporte na atualização de projetos antigos com novas tecnologias.</p>
+          <p>• participação na criação de novas páginas e serviços.</p>
+          <p>Contate-me para mais detalhes.</p>
+        </div>
+      </div>
+    </>
+  );
+}
 
 export default {
   eng: {
     name: "petros",
     date: "04-2021 to 10-2021 ",
-    detail: <Details></Details>,
+    detail: <DetailsEng></DetailsEng>,
     textTop:
       "Petros - Petrobras Social Security Foundation. the second largest pension fund in Brazil.",
     text: "full-stack developer - Angular, JQuery, JavaScript and Java",
   },
   pt: {
     name: "petros",
-    detail: <Details></Details>,
+    detail: <DetailsPtBr></DetailsPtBr>,
     date: "04-2021 ate 10-2021 ",
     textTop:
       "Petros - Fundação Petrobras de Seguridade Social. o segundo maior fundo de pensão do Brasil.",

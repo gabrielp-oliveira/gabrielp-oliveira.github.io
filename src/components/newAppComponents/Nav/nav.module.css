@@ -112,3 +112,94 @@
 .MuiMenu-list >  a:hover{
     text-decoration: underline;
 }
+
+@media (max-width: 380px) {
+    .iconAbout {
+      width: 250px;
+      height: 250px;
+    }
+    .projDesc {
+      display: none;
+    }
+    .img {
+      opacity: 1;
+    }
+  }
+  @media (min-width: 381px) {
+    .img {
+      opacity: 0.3;
+    }
+  }
+  @media (max-width: 615px) {
+    .navHeader_Container .navBar {
+      display: none;
+    }
+    .bars{
+      display: block;
+    }
+    .form {
+      width: 100%;
+      padding: 10px;
+    }
+    .projDesc > h3{
+      font-size: 16px;
+    }
+    .about {
+      margin: 0px;
+    }
+  
+    main{
+      padding: 10px;
+    }
+    /* .navHeader {
+      padding: 0px ;
+    } */
+   }
+  
+  @media (min-width: 551px) { 
+    .form {
+      width: 500px;
+      padding: 30px;
+    }
+    .about {
+      margin: 0px 10px 10px 30px;
+  
+    }
+    /* .navHeader {
+      padding: 0px 5%;
+    } */
+   }
+  
+  
+  
+  @media (max-width: 430px) { 
+    /* .proj {
+      width: 100%;
+      margin: 30px 0px;
+    }
+    .form-top{
+      flex-direction: column;
+    }
+    .form-top > div {
+      width: 100%;
+    } */
+    .navHeader_Container {
+      padding: 0;
+    }
+    .about > p {
+      font-size: 20px;
+    }
+    .intro  {
+      width: 380px;
+    }
+    .intro > h1 {
+      font-size: 26px;
+    }
+    
+    .intro > h2 {
+      font-size: 16px;
+    }
+    .projDesc > span{
+      font-size: 14px;
+    }
+   }

@@ -10,8 +10,6 @@ function NewApp() {
         <Home />
         <main className="newMain">
           <About></About>
-
-          <Ship color="white" height="150px" width="150px" />
           <Contact></Contact>
         </main>
         <Footer></Footer>

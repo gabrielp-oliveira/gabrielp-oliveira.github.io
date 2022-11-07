@@ -7,7 +7,10 @@ import { VersionContext } from '../../../context/VersionContext'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLanguage, faAnchor } from '@fortawesome/free-solid-svg-icons'
 import Mountains from '../../../assets/mountains'
-// import SideMenu from './sideMenu.jsx'
+import SideMenu from './sideMenu.jsx'
+import homeStyle from '../Home/home.module.css'
+import aboutStyle from '../About/about.module.css'
+import contactStyle from '../contact/contact.module.css'
 
 
 function NavHeader() {
@@ -22,10 +25,8 @@ function NavHeader() {
             
             if (navigator.language === 'pt') {
                 SetLanguage('pt')
-                SetOutPutLanguage('eng')
             } else {
                 SetLanguage('eng')
-                SetOutPutLanguage('pt/br')
             }
             // adjustLight()
         }
@@ -37,10 +38,8 @@ function NavHeader() {
 
         if (Language === 'pt') {
             SetLanguage('eng')
-            SetOutPutLanguage('pt/br')
         } else {
             SetLanguage('pt')
-            SetOutPutLanguage('eng')
         }
     }
     function changeVersion(){
@@ -53,19 +52,19 @@ function NavHeader() {
 
         <div className={navStyler.navHeader}>
             <div className={navStyler.navBar}>
-                <span> <a href="#Home">{navheader[Language].home}</a></span>
-                <span> <a href="#about">{navheader[Language].about}</a></span>
-                <span> <a href="#portfolio">{navheader[Language].portfolio}</a></span>
-                <span> <a href="#contact">{navheader[Language].contact}</a> </span>
+                <span> <a href={"#"+homeStyle.Home}>{navheader[Language].home}</a></span>
+                <span> <a href={"#"+aboutStyle.About}>{navheader[Language].about}</a></span>
+                {/* <span> <a href={}">{navheader[Language].portfolio}</a></span> */}
+                <span> <a href={"#"+contactStyle.Contact}>{navheader[Language].contact}</a> </span>
             </div>
-            {/* <SideMenu/> */}
+            <SideMenu/>
 
             <div className={navStyler.config} >
 
 
                 <div className={navStyler.language} onClick={() => changelanguage()}>
                     <FontAwesomeIcon icon={faLanguage} />
-                    <span>{outPutLanguage}</span>
+                    <span>{Language}</span>
                 </div>
 
                 <div className={navStyler.adjustIcon} onClick={e => changeVersion(e)} draggable="false">

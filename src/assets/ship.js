@@ -3,9 +3,8 @@ import Bubble from "../components/newAppComponents/bubble/Bubble";
 function Ship({ color, width, height }) {
   return (
     <>
-      <div style={{width: 'min-content'}}>
+      <strong style={{width: 'min-content', position: 'absolute', top: '100px', left: '20px'}}>
         <Bubble slow={true} />
-
         <svg
           version="1.0"
           xmlns="http://www.w3.org/2000/svg"
@@ -303,7 +302,7 @@ function Ship({ color, width, height }) {
             />
           </g>
         </svg>
-      </div>
+      </strong>
     </>
   );
 }

@@ -3,7 +3,7 @@ import img from "../../assets/imgs/techProject-Logo.png";
 import CnS from "../../assets/imgs/C&S.png";
 import companyStyle from "./companyStyle.module.css";
 
-function Details() {
+function DetailsEng() {
   return (
     <>
       client:
@@ -26,6 +26,30 @@ function Details() {
     </>
   );
 }
+function DetailsPtBr() {
+  return (
+    <>
+      cliente:
+      <div className={companyStyle.container}>
+        <img src={CnS} height="60px"></img>
+        <div>
+          <p>
+            • Configurando diferentes cenários para migrar o código do svn para
+             Github, mudando o start, a building e deployment de cada
+             aplicação de Ui e serviços web.
+          </p>
+          <p>
+            • Desenvolvimento de soluções para front e back end para manter o
+             qualidade e serviço da aplicação que envolve web
+             serviços/aplicativos.
+          </p>
+          <p>Contate-me para mais detalhes.</p>
+        </div>
+      </div>
+    </>
+  );
+}
+
 
 export default {
   eng: {
@@ -33,14 +57,14 @@ export default {
     date: "05-2022 to present time",
     textTop: "TechProject - Your reliable IT Staffing partner.",
     text: "IT Analyst - Angular, JavaScript, Nodejs and Java",
-    detail: <Details />,
+    detail: <DetailsEng />,
   },
   pt: {
     name: "TechProject",
     date: "05-2022 ate presente momento",
     textTop: "TechProject - Seu parceiro confiável de equipe de TI.",
     text: "IT Analyst - Angular, JavaScript, Nodejs and Java",
-    detail: <div />,
+    detail: <DetailsPtBr />,
   },
   info: {
     img: img,

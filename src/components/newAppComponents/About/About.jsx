@@ -55,7 +55,7 @@ function About() {
       </div>
       <br></br>
 
-      <p>SOMETHING SOMETHING SOMETHING</p>
+      <p>Or check a few contributions in the following companies.</p>
       <br></br>
       <br></br>
       <span className={aboutStyle.companies}>
@@ -63,8 +63,6 @@ function About() {
         <Company data={sirchData} language={Language} bg="sirchBackground"/>
         <Company data={petros} language={Language} bg="petrosBackground"/>
       </span>
-        <div>More...</div>
-
     </div>
   )
 }

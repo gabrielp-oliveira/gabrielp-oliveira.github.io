@@ -172,7 +172,7 @@ Regular 400 */
     opacity: 0.3;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 615px) {
   .navHeader-Container .navBar {
     display: none;
   }

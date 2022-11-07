@@ -34,12 +34,15 @@
     display: flex;
     justify-content: space-around;
 }
+#About > p {
+    text-align: justify;
+}
+
 .AboutRight {
     display: flex;
     flex-direction: column;
     width: 60%;
     padding-top: 20px;
-    margin-left: 5px;
     padding-left: 5px;
 }
 .AboutRight > span {
@@ -50,4 +53,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+@media (max-width: 930px) {
+    #About > div {
+        flex-direction: column;
+    }
+    #About {
+        padding: 15px;
+
+    }
+    .AboutLeft, .AboutRight {
+        width: 100%;
+    }
 }

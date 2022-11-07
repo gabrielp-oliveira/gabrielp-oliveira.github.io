@@ -86,3 +86,11 @@
 .access > a:hover {
     color: rgb(0, 179, 255);
 }
+
+@media (max-width: 510px) {
+    .card {
+        width: calc(100%);
+        height: 420px;
+        margin: 10px 0px;
+    }
+}
