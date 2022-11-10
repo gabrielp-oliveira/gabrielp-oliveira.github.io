@@ -1,0 +1,244 @@
+.bubbleContainer {
+  position: relative;
+  width: 100px;
+  height: 300px;
+  margin-top: 100px;
+}
+.bubble{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    filter: blur(2px);
+  }
+.bubble::after{
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 5px;
+    top: 10%;
+    left: 9%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255, 0.5);
+    /* border: 1px solid rgba(255, 255, 255, 0.5); */
+  }
+  .small{
+    width: 13px;
+    height: 13px;
+    left: 50%;
+    animation: flow-s 2s linear infinite;
+  }
+  .small-l{
+    width: 13px;
+    height: 13px;
+    left: 43%;
+    animation: flow-s-l 0.9s linear infinite;
+  }
+  .s-medium{
+    width: 20px;
+    height: 20px;
+    left: 43%;
+    animation: flow-s 1.3s linear infinite;
+  }
+  .medium{
+    width: 25px;
+    height: 25px;
+    left: 45%;
+    animation: flow-m 1s linear infinite;
+  }
+  .large{
+    width: 30px;
+    height: 30px;
+    left: 57%;
+    animation: flow-l 1.1s linear infinite;
+  }
+.bubble-slow{
+    position: absolute;
+    top: 53%;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  .small-slow{
+    width: 10px;
+    height: 10px;
+    left: 50%;
+    animation: flow-s 7s linear infinite;
+  }
+  .small-l-slow{
+    width: 10px;
+    height: 10px;
+    left: 43%;
+    animation: flow-s-l 3.5s linear infinite;
+  }
+  .s-medium-slow{
+    width: 20px;
+    height: 20px;
+    left: 43%;
+    animation: flow-s 4s linear infinite;
+  }
+  .medium-slow{
+    width: 25px;
+    height: 25px;
+    left: 45%;
+    animation: flow-m 3.5s linear infinite;
+  }
+  .large-slow{
+    width: 30px;
+    height: 30px;
+    left: 57%;
+    animation: flow-l 3s linear infinite;
+  }
+  
+  @keyframes flow-l {
+    0% {
+      background-color: rgb(255, 255, 255, 0.6);
+      top: 90%;
+      left: 55%;
+      opacity:0;
+      height: 25px;
+      width: 25px;
+    }
+    20%{
+      height: 30px;
+      width: 30px;
+      background-color: transparent;
+    }
+    25%{
+      left: 57.5%;
+      opacity: 1;
+    }
+    50%{
+      left: 58%;
+      opacity: 1;
+    }
+    75%{
+      top: 50%;
+      left: 56.5%;
+      /* background-color: red; */
+      opacity: 1;
+    }
+    100% {
+      /* background-color: blue; */
+      top: 34%;
+      left: 56%;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes flow-s {
+    0% {
+      background-color: rgb(255, 255, 255, 0.6);
+      top: 95%;
+      left: 20%;
+      height: 5px;
+      width: 5px;
+      opacity: 1;
+    }
+    20%{
+      height: 15px;
+      width: 15px;
+    }
+    50%{
+      background-color: transparent;
+      top: 70%;
+      left: 23%;
+      opacity: 1;
+    }
+    75%{
+      left: 21.5%;
+      opacity: 1;
+    }
+    100% {
+      top: 42%;
+      left: 22%;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes flow-s-m {
+    0% {
+      background-color: rgb(255, 255, 255, 0.6);
+      top: 90%;
+      left: 30%;;
+      opacity: 0.2;
+    }
+    20%{
+      background-color: transparent;
+    }
+    25%{
+      left: 42.5%;
+      opacity: 0.8;
+    }
+    50%{
+      top: 65%;
+      left: 33.5%;
+      opacity: 1;
+    }
+    75%{
+      top: 60%;
+      left: 32.5%;
+      opacity: 1;
+    }
+    100% {
+      top: 40%;
+      left: 32%;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes flow-m {
+    0% {
+      background-color: rgb(255, 255, 255, 0.6);
+      top: 100%;
+      left: 70%;;
+      opacity:0;
+    }
+    
+    25%{
+      background-color: transparent;
+      opacity: 1;
+    }
+    50%{
+      top: 62%;
+      left: 73%;
+      opacity: 1;
+    }
+    75%{
+      left: 69.5%;
+      opacity: 1;
+    }
+    100% {
+      top: 30%;
+      left: 70.5%;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes flow-s-l {
+    0% {
+      top: 97%;
+      left: 45%;;
+      opacity:0;
+    }
+    25%{
+      left: 47.5%;
+      opacity: 1;
+    }
+    50%{
+      top: 69%;
+      left: 47%;
+      opacity: 1;
+    }
+    75%{
+      left: 48.5%;
+      opacity: 1;
+    }
+    100% {
+      top: 38%;
+      left: 46%;
+      opacity: 0;
+    }
+  }
+  
+  

@@ -1,0 +1,225 @@
+.darkWaves {
+  position: relative;
+  bottom: 0;
+}
+
+.waves {
+  position: absolute!important;
+  bottom: 10px;
+  left: 0px;
+  /* transform: rotate3d(1, 1, 1, 10deg); */
+  position: relative;
+  
+}
+.first {
+  bottom: -70px!important;
+  background-color: rgba(255, 255, 255, 0);
+  height: 150px;
+  z-index: 2;
+}
+#wave-container {
+
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+}
+
+.wave-container {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+}
+
+/* animations */
+
+.slide-right {
+    transform: rotateZ(-50deg);
+    -webkit-animation: slide-right 3s ease-in-out infinite alternate-reverse backwards;
+	    animation: slide-right 3s ease-in-out infinite alternate-reverse backwards;
+}
+.slide-right-slow {
+    transform: rotateZ(-50deg);
+    -webkit-animation: slide-right 6s ease-in-out infinite alternate-reverse backwards;
+	    animation: slide-right 6s ease-in-out infinite alternate-reverse backwards;
+}
+.slide-bottom {
+	-webkit-animation: slide-bottom 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse backwards;
+	        animation: slide-bottom 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse backwards;
+}
+@-webkit-keyframes slide-right {
+    0% {
+      -webkit-transform: translate(-10px, 0);
+              transform: translate(-10px, 0);
+    }
+    100% {
+      -webkit-transform: translate(100px, 100px);
+              transform: translate(100px, 100px);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+      -webkit-transform: translate(-10px, 0);
+              transform: translate(-10px, 0);
+    }
+    100% {
+      -webkit-transform: translate(100px, 100px);
+              transform: translate(100px, 100px);
+    }
+  }
+
+  .rotate-center {
+	-webkit-animation: rotate-center 5s ease-in-out infinite alternate-reverse;
+	        animation: rotate-center 5s ease-in-out infinite alternate-reverse;
+}
+.slide-left {
+	-webkit-animation: slide-left 2s ease-in-out infinite alternate-reverse backwards;
+	        animation: slide-left 2s ease-in-out infinite alternate-reverse backwards;
+}
+.slide-left-slow {
+	-webkit-animation: slide-left 8s ease-in-out infinite alternate-reverse backwards;
+	        animation: slide-left 8s ease-in-out infinite alternate-reverse backwards;
+}
+
+  @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(10deg);
+              transform: rotate(10deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(10deg);
+              transform: rotate(10deg);
+    }
+  }
+  @-webkit-keyframes slide-left {
+    
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    100% {
+      -webkit-transform: translate(-100px, 100px);
+              transform: translate(-100px, 100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translate(0px, 100px);
+              transform: translate(0px, 100px);
+    }
+    100% {
+      -webkit-transform: translate(-100px, -20px);
+              transform: translate(-100px, -0px);
+    }
+  }
+  @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(30px);
+              transform: translateY(30px);
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(30px);
+              transform: translateY(30px);
+    }
+  }
+  
+  

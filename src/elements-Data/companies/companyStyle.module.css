@@ -1,0 +1,24 @@
+.container {
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+.container >img {
+    /* width: 100px;
+    height: 100px; */
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 510px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+}

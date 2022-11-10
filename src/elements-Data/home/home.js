@@ -1,4 +1,4 @@
 export default {
-    pt: 'Desenvolvedor Front-End',
-    eng: 'Front-End Developer'
+    pt: 'Desenvolvedor Full-stack',
+    eng: 'Full-stack Developer'
 }   

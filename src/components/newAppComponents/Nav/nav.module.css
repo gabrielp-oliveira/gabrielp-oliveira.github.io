@@ -1,0 +1,205 @@
+.navHeader{
+    width: 100%;
+    max-width: 2300px;
+    height: 60px;
+    position: relative;
+
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.navHeader_Container {
+    z-index: 10;
+    padding: 0px 10%;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+
+}
+.navBar{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+.navBar >span {
+    padding: 20px;
+    margin: 0px 3px;
+    height: 100%;
+    font-size: 18px;
+    transition: ease-in 200ms;
+    align-self: flex-end;
+    padding: 20px 5px;
+    cursor: pointer;
+}
+.navBar >span > a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.navBar >span > a:hover{
+    color: rgb(13, 140, 214);
+    text-decoration: underline;
+
+}
+
+.adjustIcon {
+    filter: none;
+    /* border: 1px solid rgb(28, 3, 255); */
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    /* padding: 5px; */
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    
+}   
+
+
+.config{
+    display: flex;
+    align-self: center;
+    margin: 15px;
+    color: white;
+    /* border: 1px solid black; */
+    /* width: 150px; */
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.config > div {
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+
+.language {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    color: white;
+}
+.language > svg {
+    font-size: 30px;
+}
+
+.MuiMenu-list >  a {
+    text-decoration: none;
+    color: black;
+}
+
+.MuiMenu-list >  a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 380px) {
+    .iconAbout {
+      width: 250px;
+      height: 250px;
+    }
+    .projDesc {
+      display: none;
+    }
+    .img {
+      opacity: 1;
+    }
+  }
+  @media (min-width: 381px) {
+    .img {
+      opacity: 0.3;
+    }
+  }
+  @media (max-width: 615px) {
+    .navHeader_Container .navBar {
+      display: none;
+    }
+    .bars{
+      display: block;
+    }
+    .form {
+      width: 100%;
+      padding: 10px;
+    }
+    .projDesc > h3{
+      font-size: 16px;
+    }
+    .about {
+      margin: 0px;
+    }
+  
+    main{
+      padding: 10px;
+    }
+    /* .navHeader {
+      padding: 0px ;
+    } */
+   }
+  
+  @media (min-width: 551px) { 
+    .form {
+      width: 500px;
+      padding: 30px;
+    }
+    .about {
+      margin: 0px 10px 10px 30px;
+  
+    }
+    /* .navHeader {
+      padding: 0px 5%;
+    } */
+   }
+  
+  
+  
+  @media (max-width: 430px) { 
+    /* .proj {
+      width: 100%;
+      margin: 30px 0px;
+    }
+    .form-top{
+      flex-direction: column;
+    }
+    .form-top > div {
+      width: 100%;
+    } */
+    .navHeader_Container {
+      padding: 0;
+    }
+    .about > p {
+      font-size: 20px;
+    }
+    .intro  {
+      width: 380px;
+    }
+    .intro > h1 {
+      font-size: 26px;
+    }
+    
+    .intro > h2 {
+      font-size: 16px;
+    }
+    .projDesc > span{
+      font-size: 14px;
+    }
+   }

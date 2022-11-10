@@ -1,24 +1,43 @@
-import Home from './components/home/Home'
-import './App.css';
-import About from './components/about/about'
-import Portfolio from './components/portfolio/portfolio'
-import Contact from './components/contact/contact'
-import Footer from './components/footer/Footer'
+import React, { useEffect, useContext } from "react";
+
+import OldApp from "./OldApp";
+import NewApp from "./NewApp";
+import { VersionContext } from "./context/VersionContext";
+
+import api from "./api/checkVisit";
 
 function App() {
-  return (
-    <div className="App">
-      <Home></Home>
-      <main>
+  const { Version } = useContext(VersionContext);
 
-        <div className="body-conteiner">
-          <About></About>
-          <Portfolio></Portfolio>
-          <Contact />
-        </div>
-      </main>
-      <Footer />  
-    </div>
+  useEffect(() => {
+    const user = localStorage.getItem("user");
+    
+    if (user) {
+      const currentTime = Date.now()
+      const time = currentTime - user
+      const now = new Date(time).getMinutes();
+      if(now >= 10){
+        api.post("/", { data: now })
+        .then(() => {
+          localStorage.setItem('user', JSON.stringify(currentTime));
+        }); 
+      }
+    }else{
+      const currentTime = Date.now()
+      api.post("/", { data: 0 })
+      .then(() => {
+        localStorage.setItem('user', JSON.stringify(currentTime));
+      }); 
+
+    }
+  }, []);
+
+  return (
+    <>
+      {Version == "old" ? <OldApp /> : <NewApp />}
+      {/* <NewApp/>
+  <OldApp/> */}
+    </>
   );
 }
 

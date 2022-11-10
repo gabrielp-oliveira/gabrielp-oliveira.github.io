@@ -1,0 +1,96 @@
+.card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px rgba(255, 255, 255, 0.1);
+    margin: 10px 20px;
+    cursor: pointer;
+}
+.box {
+    border: none;
+}
+.companyDetails {
+    background-color: rgba(0, 0, 0, 0.525);
+    width: 700px;
+    min-height: 500px;
+    border-radius: 5px;
+    box-shadow:  5px 8px 10px rgba(255, 255, 255, 0.111);
+    
+}
+
+.techprojectBackground {
+    background-image: url('../../../assets/imgs/techprojectsBg.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.sirchBackground {
+    background-image: url('../../../assets/imgs/sirchBg.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.petrosBackground {
+    background-image: url('../../../assets/imgs/petrosBg.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cardTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-height: 90px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);;
+}
+
+.cardTop > p {
+    margin: 10px;
+    text-align: center;
+    align-self: flex-start;
+    align-content: flex-end;
+}
+.cardTop > img {
+    margin: 45px 0px 10px 10px;
+    background-color: rgb(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+.cardBottom {
+    margin: 45px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    color: rgb(206, 206, 206);
+}
+.date {
+    align-self: flex-end;
+}
+.access {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin:20px 0px ;
+}
+.access > a {
+    color: white;
+    font-size: 25px;
+    transition: 200ms;
+}
+.access > a:hover {
+    color: rgb(0, 179, 255);
+}
+
+@media (max-width: 510px) {
+    .card {
+        width: calc(100%);
+        height: 420px;
+        margin: 10px 0px;
+    }
+}

@@ -1,0 +1,46 @@
+.list {
+    width: 250px;
+}
+.list .MuiList-padding  {
+    padding-bottom: 0;
+    border: 0;
+
+}
+.fullList{
+    width: auto,
+}
+.MuiDrawer-root > .MuiPaper-root{
+    background: var(--Body)!important;
+    filter: invert(0.05);
+}
+.bars{
+    align-self: center;
+    color: white;
+    font-size: 25px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0;
+    display: none;
+    margin-left: 15px;
+}
+.SideNav {
+    display: flex;
+    flex-direction: column;
+}
+.SideNav > span {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--Body);
+    filter: invert(0.06);
+}
+.SideNav > span > a {
+    padding: 15px 80px;
+    color: var(--Body);
+    filter: invert(1);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.SideNav > span:first-child{
+    height: 52px;
+}
