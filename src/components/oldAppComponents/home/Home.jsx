@@ -41,7 +41,7 @@ function Header() {
                   <a href="#portfolio" style={{color: 'white', fontWeight: '600', textDecoration: 'none'}}>{navheader[Language].portfolio}</a>
                 </Button>
                 </div>
-                <div class="astro">
+                <div className="astro">
                     <span></span>
                     <span></span>
                     <span></span>

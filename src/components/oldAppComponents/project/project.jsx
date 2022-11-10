@@ -49,23 +49,6 @@ function Project({ data }) {
   }
 }, [])
 
-
-window.addEventListener('resize',(e) => {
-  if(Version){
-    
-    if(e.target.innerWidth < 1000){
-      setWidth(e.target.innerWidth-50)
-      if(e.target.innerWidth < 380){
-        img.current.style.opacity = 1
-      }else{
-        img.current.style.opacity = '0.3'
-      }
-    }else{
-      setWidth(950)
-    }
-  }
-})
-
   
   function projMouseEnter(e){
     if(window.screen.width > 380){
@@ -77,7 +60,7 @@ window.addEventListener('resize',(e) => {
   }
   
   function projMouseLeave (e){
-    if(window.screen.width > 380){
+    if(window.screen?.width > 380){
       img.current.style.opacity = '0.3'
       projDesc.current.style.opacity = 1
     }else{
@@ -86,7 +69,7 @@ window.addEventListener('resize',(e) => {
   }
   return (
     <div className="proj" onMouseEnter={e => projMouseEnter(e)} onMouseLeave={e => projMouseLeave(e)}>
-      <div className="proj-info" onClick={handleClickOpen} s>
+      <div className="proj-info" onClick={handleClickOpen}>
 
         <div className="proj-Card">
           <img className="img" src={data.info.img} alt={data.info.title} ref={img} />

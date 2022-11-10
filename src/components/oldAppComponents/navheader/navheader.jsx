@@ -103,29 +103,29 @@ function NavHeader() {
         SetVersion(Version === 'new' ? 'old': 'new')
     }
 
-    window.addEventListener('resize',(e) => {
-        if(Version){
-
-        const astro = document.querySelector('.astro')
-        if(e.target.innerWidth >= 850){
-            if (Adjust === 'Dark') {
-                astro.style.top = '10%'
-                astro.style.left = '72%'
-            }else{
-                astro.style.top = '4%'
-                astro.style.left = '3%'
-            }
-        }else{
-            if (Adjust === 'Dark') {
-                astro.style.top = '10%'
-                astro.style.left = '54%'
-            }else{
-                astro.style.top = '1%'
-                astro.style.left = '-3%'
-            }
-        }
-        }
-    })
+    // window.addEventListener('resize',(e) => {
+    //     if(Version == 'old'){
+    //     console.log('...')
+    //     const astro = document.querySelector('.astro')
+    //     if(e.target.innerWidth >= 850){
+    //         if (Adjust === 'Dark') {
+    //             astro?.style.top = '10%'
+    //             astro?.style.left = '72%'
+    //         }else{
+    //             astro?.style.top = '4%'
+    //             astro?.style.left = '3%'
+    //         }
+    //     }else{
+    //         if (Adjust === 'Dark') {
+    //             astro?.style.top = '10%'
+    //             astro?.style.left = '54%'
+    //         }else{
+    //             astro?.style.top = '1%'
+    //             astro?.style.left = '-3%'
+    //         }
+    //     }
+    //     }
+    // })
 
 
     return (

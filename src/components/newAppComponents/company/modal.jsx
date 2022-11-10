@@ -33,7 +33,7 @@ export default function BasicModal({ open, setOpen, bg, data, language }) {
           <div className={modalStyle.modalBottom}>
             <div>
               <p>{data[language].textTop}</p>
-              <p>{data[language].detail}</p>
+              <div>{data[language].detail}</div>
               <p>{data[language].text}</p>
 
             </div>
