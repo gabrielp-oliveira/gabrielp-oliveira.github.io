@@ -116,8 +116,8 @@ function Contact() {
               <textarea type="text" name="message" id="message" placeholder={ContactData[Language].message} />
 
             </span>
-            <Button color="primary" disabled={target} variant="outlined" size="large" type="submit"
-        className={target? 'disabled' : ''}>
+            <Button  disabled={target} variant="contained" size="large" type="submit"
+        >
           {ContactData[Language].send}
         </Button>
 
