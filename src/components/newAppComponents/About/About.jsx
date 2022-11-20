@@ -25,6 +25,7 @@ function About() {
   const { Language } = useContext(LanguageContext);
 
   return (
+    
     <div style={{ color: 'white' }} id={aboutStyle.About} >
       <h2 className="">{about[Language].about}</h2>
       <div >
@@ -32,9 +33,9 @@ function About() {
         <div className={aboutStyle.AboutLeft}>
           <h2>Gabriel P. Oliveira</h2>
           <div>
-            <span><FontAwesomeIcon icon={faLinkedin} /></span>
-            <span> <FontAwesomeIcon icon={faGithub} /></span>
-            <span><FontAwesomeIcon icon={faEnvelope} /></span>
+            <a href="https://www.linkedin.com/in/gabrielp-oliveira" target="_blank" ><FontAwesomeIcon icon={faLinkedin} /> </a>
+            <a href="https://github.com/gabrielp-oliveira" target="_blank"> <FontAwesomeIcon icon={faGithub} /></a>
+            <a href="mailto:gabriel.pso100@gmail.com" target="_blank" ><FontAwesomeIcon icon={faEnvelope} /></a>
           </div>
         </div>
         <div className={aboutStyle.AboutRight}>
@@ -55,7 +56,7 @@ function About() {
       </div>
       <br></br>
 
-      <p>Or check a few contributions in the following companies.</p>
+      <p className={aboutStyle.continue}>{about[Language].continue }</p>
       <br></br>
       <br></br>
       <span className={aboutStyle.companies}>

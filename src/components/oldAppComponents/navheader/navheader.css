@@ -53,6 +53,9 @@
 
 }
 
+.New {
+    margin: 0;
+}
 .adjustIcon {
     filter: none;
     /* border: 1px solid rgb(28, 3, 255); */
@@ -85,7 +88,7 @@
     align-items: center;
 }
 .config > div {
-    margin: 0px 20px;
+    margin: 0px 15px;
     cursor: pointer;
 }
 

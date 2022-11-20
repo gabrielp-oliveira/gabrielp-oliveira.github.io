@@ -15,6 +15,10 @@
     border-radius: 5px;
 }
 
+.container > div > p {
+    margin: 10px 0px;
+}
+
 @media (max-width: 510px) {
 
     .container {

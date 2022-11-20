@@ -42,13 +42,7 @@ export default function SwipeableTemporaryDrawer() {
 
     </div>
   );
-  useEffect(() => {
-    if(navigator.language === 'eng'){
-      SetLanguage('eng')
-    }else{
-      SetLanguage('pt')
-    }
-  }, [])
+
 
   return (
     <div className="bars">

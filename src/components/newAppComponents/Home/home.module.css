@@ -142,17 +142,18 @@
     .navHeaderContainer {
       padding: 0;
     }
-    .newIntro > p {
+    
+    .newIntro p {
       font-size: 20px;
     }
-    .intro  {
+    .newIntro  {
       width: 380px;
     }
-    .intro > h1 {
+    .newIntro h1 {
       font-size: 26px;
     }
     
-    .intro > h2 {
+    .newIntro h2 {
       font-size: 16px;
     }
     .projDesc > span{

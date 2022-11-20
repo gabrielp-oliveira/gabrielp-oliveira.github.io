@@ -20,17 +20,6 @@ function NavHeader() {
 
     const [Adjust, SetAdjust] = useState('Light')
 
-    useEffect(() => {
-        if(Version == 'old'){
-            
-            if (navigator.language === 'pt') {
-                SetLanguage('pt')
-            } else {
-                SetLanguage('eng')
-            }
-            // adjustLight()
-        }
-    }, [])
 
 
 

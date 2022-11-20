@@ -7,7 +7,9 @@ export default  {
         about_sub_text:'For more information on professional and academic background, access the resume at the button below.',
         button: 'Resume',
         about:'About',
-        resume: pdfEng
+        resume: pdfEng,
+        continue: 'Or check a few contributions in the following companies.'
+
 
 
     },
@@ -16,7 +18,9 @@ export default  {
         about_sub_text:'Para mais informaçoes de historico profissional e academico, acesse o curriculo no botao abaixo.',
         button: 'Curriculo',
         about:'Sobre',
-        resume: pdfPt
+        resume: pdfPt,
+        continue: 'Ou de confira algumas contribuições das seguintes empresas.'
+
 
     }
 }

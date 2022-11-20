@@ -6,7 +6,6 @@ import companyStyle from "./companyStyle.module.css";
 function DetailsEng() {
   return (
     <>
-    <br></br>
       <div className={companyStyle.container}>
         <img src={sirchexample} height="220px"></img>
         <div>
@@ -31,7 +30,6 @@ function DetailsEng() {
 function DetailsPtBr() {
   return (
     <>
-    <br></br>
       <div className={companyStyle.container}>
         <img src={sirchexample} height="220px"></img>
         <div>

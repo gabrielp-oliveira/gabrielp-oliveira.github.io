@@ -9,6 +9,7 @@ import { LanguageContext } from '../../../context/languageContext';
 import Nav from '../Nav/Nav'
 import home from '../../../elements-Data/home/home'
 import Drip from './Drip';
+import AboutStyle from '../About/about.module.css'
 
 function Home({name}) {
   const { Language, SetLanguage } = useContext(LanguageContext)
@@ -32,7 +33,7 @@ function Home({name}) {
                 <a href="https://www.linkedin.com/in/gabrielp-oliveira" target="_blank" rel="noreferrer" ><span> <FontAwesomeIcon icon={faLinkedin} /></span></a>
               </div>
               <Button variant="contained" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
-                <a href="#portfolio" style={{ color: 'white', fontWeight: '600', textDecoration: 'none' }}>portfolio</a>
+                <a href={"#"+AboutStyle.About} style={{ color: 'white', fontWeight: '600', textDecoration: 'none' }}>portfolio</a>
               </Button>
 
             </div>

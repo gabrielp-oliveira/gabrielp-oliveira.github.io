@@ -23,6 +23,7 @@
     height: 550px;
     background-color: rgb(34, 34, 34);
     border-radius: 10px;
+    overflow: auto;
 }
 
 
@@ -54,9 +55,7 @@
 }
 
 .modalBottom {
-    padding-top: 80px;
-    padding-left: 20px;
-    padding: 80px 20px 10px 20px;
+    padding: 10px 20px 10px 20px;
     height: 100%;
     color: white;
     display: flex;
@@ -65,12 +64,19 @@
 
 }
 
+.subText{
+    margin-top: 50px;
+    font-size: 13px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
 .access {
     width: 100%;
     /* background-color: white; */
     display: flex;
     justify-content: space-around;
-
+    margin-top: 15px;
 }
 .access svg {
     font-size: 30px;
@@ -78,6 +84,17 @@
 }
 .date {
     align-self: flex-end;
+}
+.close {
+    color: rgb(219, 62, 62);
+    font-weight: 800;
+    font-size: 26px;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.close:hover {
+    color: red;
 }
 
 @media (max-width: 720px) {

@@ -31,8 +31,8 @@ export default function BasicModal({ open, setOpen, bg, data, language }) {
           </div>
 
           <div className={modalStyle.modalBottom}>
-            <div>
-              <p>{data[language].textTop}</p>
+            <div >
+              <p className={modalStyle.subText}>{data[language].textTop}</p>
               <div>{data[language].detail}</div>
               <p>{data[language].text}</p>
 
@@ -41,6 +41,7 @@ export default function BasicModal({ open, setOpen, bg, data, language }) {
             <div className={modalStyle.access}>
               <a target='_blank' href={data.info.linkedin}><FontAwesomeIcon icon={faLinkedin} /></a>
               <a target='_blank' href={data.info.website}><FontAwesomeIcon icon={faLaptop} /></a>
+              <span className={modalStyle.close} onClick={() => handleClose(false)}>x</span>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@
     width: 100%;
     background-color: rgb(255, 255, 255, 0.1);
     border-radius: 10px;
-    padding-top: 30px;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +34,10 @@
     display: flex;
     justify-content: space-around;
 }
+.AboutLeft > div > a {
+    color: white;
+}
+
 #About > p {
     text-align: justify;
 }
@@ -65,5 +69,17 @@
     }
     .AboutLeft, .AboutRight {
         width: 100%;
+    }
+}
+@media (max-width: 400px) {
+    #About {
+        width: 100%;
+    }
+    .AboutRight p {
+        font-size: 14px;
+    }
+    .continue {
+        font-size: 14px;
+        
     }
 }

@@ -20,7 +20,6 @@ function NavHeader() {
     useEffect(() => {
 
         adjustLight()
-        console.log(navigator.language)
         if (navigator.language === 'pt') {
             SetLanguage('pt')
             SetOutPutLanguage('eng')
@@ -150,7 +149,7 @@ function NavHeader() {
                 <div className="adjustIcon" onClick={e => adjustLight(e)} draggable="false">
                     <FontAwesomeIcon icon={faLightbulb} />
                 </div>
-                <div className="adjustIcon" onClick={e => changeVersion(e)} draggable="false">
+                <div className="New" onClick={e => changeVersion(e)} draggable="false">
                     <FontAwesomeIcon icon={faAnchor} />
                 </div>
 
