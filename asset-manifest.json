@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.dcdfd356.chunk.css",
-    "main.js": "/static/js/main.951fc551.chunk.js",
-    "main.js.map": "/static/js/main.951fc551.chunk.js.map",
+    "main.js": "/static/js/main.2d5aaa5d.chunk.js",
+    "main.js.map": "/static/js/main.2d5aaa5d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.dd09c9b8.js",
     "runtime-main.js.map": "/static/js/runtime-main.dd09c9b8.js.map",
     "static/js/2.29357de0.chunk.js": "/static/js/2.29357de0.chunk.js",
@@ -13,7 +13,7 @@
     "static/css/main.dcdfd356.chunk.css.map": "/static/css/main.dcdfd356.chunk.css.map",
     "static/js/2.29357de0.chunk.js.LICENSE.txt": "/static/js/2.29357de0.chunk.js.LICENSE.txt",
     "static/media/C&S.c6d2454f.png": "/static/media/C&S.c6d2454f.png",
-    "static/media/Gabriel-Oliveira.663edcea.pdf": "/static/media/Gabriel-Oliveira.663edcea.pdf",
+    "static/media/Gabriel-Oliveira.ae57aa05.pdf": "/static/media/Gabriel-Oliveira.ae57aa05.pdf",
     "static/media/GabrielOliveira.e60e7f94.pdf": "/static/media/GabrielOliveira.e60e7f94.pdf",
     "static/media/imagem.37be99e3.svg": "/static/media/imagem.37be99e3.svg",
     "static/media/petros.9eca43d8.png": "/static/media/petros.9eca43d8.png",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.dd09c9b8.js",
     "static/js/2.29357de0.chunk.js",
     "static/css/main.dcdfd356.chunk.css",
-    "static/js/main.951fc551.chunk.js"
+    "static/js/main.2d5aaa5d.chunk.js"
   ]
 }
