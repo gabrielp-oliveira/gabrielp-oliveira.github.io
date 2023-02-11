@@ -44,7 +44,7 @@ function About() {
             {about[Language].about_sub_text}</p>
             <span>
               <br/>
-              <a target="blank" href={about[Language].resume}>
+              <a target="blank" href={about[Language].resume} download>
                 <Button variant="contained" color="secondary">
                 <FontAwesomeIcon icon={faScroll} />
                 </Button>

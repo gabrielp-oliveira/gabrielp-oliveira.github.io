@@ -8,8 +8,8 @@ function Sky() {
         let {innerWidth,innerHeight } = window
 
         window.addEventListener('resize',(e) => {
-            innerHeight = e.path[0].innerHeight
-          innerWidth = e.path[0].innerWidth
+            innerHeight = e.target.innerHeight + 100
+          innerWidth = e.target.innerWidth
         })
         
         setRatio([innerWidth, innerHeight])

@@ -35,7 +35,7 @@ function About() {
 
 
             <span className="resume">
-              <a target="blank" href={about[Language].resume}>
+              <a target="blank" href={about[Language].resume} download>
                 <Button variant="contained" color="secondary">
                   {about[Language].button}
                 </Button>

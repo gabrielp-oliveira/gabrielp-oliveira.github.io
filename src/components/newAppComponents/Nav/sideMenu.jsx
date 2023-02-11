@@ -10,6 +10,11 @@ import { LanguageContext } from '../../../context/languageContext'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
+import homeStyle from '../Home/home.module.css'
+import aboutStyle from '../About/about.module.css'
+import contactStyle from '../contact/contact.module.css'
+import navStyler from './nav.module.css'
+
 export default function SwipeableTemporaryDrawer() {
   const { Language, SetLanguage } = useContext(LanguageContext)
   const [state, setState] = React.useState({left: false });
@@ -32,10 +37,11 @@ export default function SwipeableTemporaryDrawer() {
       <List>
             <div className={sideMenuStyle.SideNav}>
                 <span> <a></a></span>
-                <span> <a href="#Home">{navheader[Language].home}</a></span>
-                <span> <a href="#about">{navheader[Language].about}</a></span>
-                <span> <a href="#portfolio">{navheader[Language].portfolio}</a></span>
-                <span> <a href="#contact">{navheader[Language].contact}</a> </span>
+
+                <span> <a href={"#"+homeStyle.Home}>{navheader[Language].home}</a></span>
+                <span> <a href={"#"+aboutStyle.About}>{navheader[Language].about}</a></span>
+                <span> <a href={"#"+contactStyle.Contact}>{navheader[Language].contact}</a> </span>
+            {/* </div> */}
             </div>
       </List>
       <Divider />

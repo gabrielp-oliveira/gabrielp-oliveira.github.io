@@ -3,7 +3,9 @@ import pdfEng from '../../assets/pdf/Gabriel-Oliveira.pdf'
 // eslint-disable-next-line import/no-anonymous-default-export
 export default  {
     eng: {
-        about_text: "I'm Full-stack developer, with a passion in build interactives, responsiveness and friendly technologies for users. Focus on matching modern market technologies with deep knowledge, resulting in a clean and objective code.",
+        about_text: `I'm Full-stack web developer, with a passion to build interactive, responsive and
+        user friendly applications. I have always focused on using modern technologies
+        with best practices, resulting in overall client satisfaction.`,
         about_sub_text:'For more information on professional and academic background, access the resume at the button below.',
         button: 'Resume',
         about:'About',
