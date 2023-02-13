@@ -56,9 +56,10 @@ function NavHeader() {
                     <span>{Language}</span>
                 </div>
 
-                <div className={navStyler.adjustIcon} onClick={e => changeVersion(e)} draggable="false">
+                <div className={navStyler.language} onClick={e => changeVersion(e)} draggable="false">
                     {/* <FontAwesomeIcon icon={faAnchor} /> */}
                     <Mountains />
+                    <span>{navheader[Language].version}</span>
                 </div>
 
             </div>

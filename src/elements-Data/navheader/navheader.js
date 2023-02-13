@@ -5,7 +5,9 @@ export default  {
         about:'About',
         portfolio:'Portfolio',
         contact:'Contact',
-        ariaLabel: 'navigation button of the header.'
+        ariaLabel: 'navigation button of the header.',
+         version :'Old',
+         newVersion: 'New'
 
     },
         pt:{
@@ -13,6 +15,9 @@ export default  {
         about:'Sobre',
         portfolio:'Projetos',
         contact:'Contato',
-        ariaLabel: 'Botao de navegação do cabeçalho.'
+        ariaLabel: 'Botao de navegação do cabeçalho.',
+        version :'Velho',
+        newVersion:'Novo'
+
     },
 }

@@ -151,6 +151,8 @@ function NavHeader() {
                 </div>
                 <div className="New" onClick={e => changeVersion(e)} draggable="false">
                     <FontAwesomeIcon icon={faAnchor} />
+                    <span>{navheader[Language].newVersion}</span>
+
                 </div>
 
             </div>

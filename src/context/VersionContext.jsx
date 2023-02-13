@@ -1,9 +1,9 @@
 import { createContext, useState } from "react";
 
-export const VersionContext = createContext('old');
+export const VersionContext = createContext('new');
 
 export default function VersionProvider({ children }) {
-  const [Version, SetVersion] = useState('old');
+  const [Version, SetVersion] = useState('new');
 
   return (
     <VersionContext.Provider
