@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from "react";
 
 import OldApp from "./OldApp";
 import NewApp from "./NewApp";
+import ModernApp from './ModernApp'
 import { VersionContext } from "./context/VersionContext";
 
 import api from "./api/checkVisit";
@@ -34,7 +35,8 @@ function App() {
 
   return (
     <>
-      {Version == "old" ? <OldApp /> : <NewApp />}
+      {/* {Version == "old" ? <OldApp /> : <NewApp />} */}
+      <ModernApp />
       {/* <NewApp/>
   <OldApp/> */}
     </>

@@ -1,6 +1,8 @@
 :root {
   --Dark: rgb(228, 190, 96);
   --Body: rgb(5, 5, 5);
+  --positionY: 0;
+  --positionX: -200px;
 }
 
 *{
@@ -17,7 +19,8 @@ html {
   scroll-behavior: smooth;
 }
 #root {
-  background-color: black;
+  /* background-color: black; */
+  min-height: 100%;
 }
 
 .App {
@@ -29,6 +32,7 @@ html {
 }
 .app > .newMain {
   padding: 30px;
+  background-color: black;
 }
 
 .main {
